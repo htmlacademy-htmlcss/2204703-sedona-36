@@ -130,8 +130,6 @@ height: 3557.86px;
   text-transform: uppercase;
   width: 620px;
   height: 72px;
-  margin: 69px 290px 25px 290px;
-  margin-top: 69px;
   }
 
   .advantages-list{ /*Рассмотрим причины*/
@@ -139,7 +137,7 @@ height: 3557.86px;
     line-height: 26px;
     width: 651px;
     height: 26px;
-    margin: 0px 274.5px 90px 274px;
+
     }
 
 
@@ -150,7 +148,6 @@ font-weight: 700px;
 text-transform: uppercase;
 width: 175px;
 height: 56px;
-padding: 102px 112.5px 62px 112.5px;
 
 }
 
@@ -174,22 +171,19 @@ color: #FFFFFF;
 .advantages-description-blue{
   width: 230px;
   height: 63px;
-  padding: 0 85px 102px 85px;
+
 }
 
 .background-dark-gray{
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-title-grey{
-  padding: 112.5px 112.5px 62px 112.5px;
-}
 
 
 .advantages-description-grey{
   width: 230px;
   height: 42px;
-  padding: 0 85px 62px 85px;
+
 }
 
 .reccomendation-list{
@@ -205,7 +199,7 @@ color: #FFFFFF;
   width: 505px;
   height: 72px;
 text-transform: uppercase;
-padding: 64px 347.5px 20px 345.5px;
+
 }
 
 .reccomendation-header-description{
@@ -214,7 +208,7 @@ padding: 64px 347.5px 20px 345.5px;
   font-weight: 400;
   width: 490px;
   height: 26px;
-  padding: 0 355px 64px 355px;
+
 }
 
 .reccomendation-list-item{
@@ -223,16 +217,49 @@ padding: 64px 347.5px 20px 345.5px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.reccomendation-home{
-
+.reccomendation-home::before{
+  content:"";
+  position: absolute;
+  width: 75px;
+  height: 72px;
+  background-image: url(/images/Advantage-icon_home.svg) ;
+  background-repeat: no-repeat;
 }
 
 .reccomendation-food{
-
+  content:"";
+  position: absolute;
+width: 74px;
+height: 70px;
+  background-image: url(/images/Advantage-icon_burger.svg) ;
+  background-repeat: no-repeat;
 }
 
 .reccomendation-souvenirs{
+  content:"";
+  position: absolute;
+  width: 64px;
+  height: 76px;
+  background-image: url(/images/Advantage-icon_gifts.svg) ;
+  background-repeat: no-repeat;
+}
 
+.reccomendation h3{
+font-size: 24px;
+line-height: 28px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.reccomendation p{
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.searching{
+  width: 1200px;
+  height: 406px;
+  border: 5px solid black;
 }
 
 /*footer*/
