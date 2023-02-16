@@ -43,8 +43,6 @@ body {
 
 .page-header{
   background-color: #FFFFFF;
-  width: 1200px;
-  height: 64px;
 }
 
 .navigation-list{
@@ -57,7 +55,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-
 }
 
 .navigation-user{
@@ -83,7 +80,6 @@ background-repeat: no-repeat;
 }
 
 .button-whant-here{
-  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -99,14 +95,11 @@ background-repeat: no-repeat;
 .main-index{
   color: #333333;
   background-color: #FFFFFF;
-  width: 1200px;
-height: 3557.86px;
 }
+
 .hero{
-  background-image: url(/images/Hero_Background.jpg);
+  background-image: url(/images/hero_Background.jpg);
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 485px;
   text-align: center;
 }
 .hero::before{
@@ -128,16 +121,11 @@ height: 3557.86px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  width: 620px;
-  height: 72px;
   }
 
   .advantages-list{ /*Рассмотрим причины*/
     font-size: 22px;
     line-height: 26px;
-    width: 651px;
-    height: 26px;
-
     }
 
 
@@ -146,9 +134,6 @@ font-size: 24px;
 line-height: 28px;
 font-weight: 700px;
 text-transform: uppercase;
-width: 175px;
-height: 56px;
-
 }
 
 .advantages-of-city-item{
@@ -160,7 +145,6 @@ background-color:  rgba(131, 179, 211, 0.12);
 .advantages-description{ /*описания приемуществ*/
 font-size: 18px;
 line-height: 21px;
-text-align: center;
 }
 
 .background-blue{
@@ -168,23 +152,10 @@ background-color:#82B3D3;
 color: #FFFFFF;
 }
 
-.advantages-description-blue{
-  width: 230px;
-  height: 63px;
-
-}
-
 .background-dark-gray{
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-
-
-.advantages-description-grey{
-  width: 230px;
-  height: 42px;
-
-}
 
 .reccomendation-list{
   text-align: center;
@@ -196,79 +167,115 @@ color: #FFFFFF;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  width: 505px;
-  height: 72px;
 text-transform: uppercase;
 
 }
 
-.reccomendation-header-description{
+.recomendation-header-description{
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  width: 490px;
-  height: 26px;
-
 }
 
-.reccomendation-list-item{
+.recomendation-list-item{
   width: 400px;
   height:385px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.reccomendation-home::before{
+.recomendation-home::before{
   content:"";
   position: absolute;
+  background-image: url(/images/advantage-icon_home.svg);
   width: 75px;
   height: 72px;
-  background-image: url(/images/Advantage-icon_home.svg) ;
   background-repeat: no-repeat;
 }
 
-.reccomendation-food{
+.recomendation-food{
   content:"";
   position: absolute;
-width: 74px;
+  background-image: url(/images/advantage-icon_burger.svg) ;
+  width: 74px;
 height: 70px;
-  background-image: url(/images/Advantage-icon_burger.svg) ;
   background-repeat: no-repeat;
 }
 
-.reccomendation-souvenirs{
+.recomendation-souvenirs{
   content:"";
   position: absolute;
+  background-image: url(/images/advantage-icon_gifts.svg) ;
   width: 64px;
   height: 76px;
-  background-image: url(/images/Advantage-icon_gifts.svg) ;
   background-repeat: no-repeat;
 }
 
-.reccomendation h3{
-font-size: 24px;
-line-height: 28px;
-font-weight: 700;
-text-transform: uppercase;
-}
-
-.reccomendation p{
-  font-size: 18px;
-  line-height: 21px;
-}
-
+/*секция поиска гостиницы*/
 .searching{
   width: 1200px;
   height: 406px;
-  border: 5px solid black;
+  background-color: #FFFFFF;
+}
+
+.searching-header{
+font-size: 30px;
+font-weight: 700;
+line-height: 36px;
+text-transform: uppercase;
+}
+
+.searching-header-description{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.button-search-hotel{
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #756157;
+  color: #FFFFFF;
+  padding: 8Px 50px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+
+
+.subscribe{
+  background-image: url(/images/footer_background_subscribe.jpg);
+  width: 1200px;
+  height: 414.86px;
+  color:#FFFFFF
+}
+
+.subscribe-header{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+
+}
+
+.subscribe-header-descroption{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.button-subscribe{
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #82B3D3;;
+  color: #FFFFFF;
+  padding: 8Px 50px;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 /*footer*/
-
-.subscribe{
-  /*background-image: url(/images/footer_background_subscribe.jpg);*/
-  width: 1200px;
-  height: 414.86px;
-}
 
 .footer-social-list{
   list-style: none;
@@ -299,4 +306,11 @@ text-transform: uppercase;
   height: 17px;
   background-image: url(/images/catalog_social_youtube.svg);
   background-repeat: no-repeat;
+}
+
+.footer-contact-phone{
+  font-size: 40px;
+  line-height: 40px;
+text-decoration:none;
+color: #000000;
 }
