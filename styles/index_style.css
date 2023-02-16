@@ -1,0 +1,275 @@
+/*Сюда подключи шрифты*/
+@font-face {
+  font-family: "PT Sans";
+  font-style: regular;
+  font-weight: 400;
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: regular;
+  font-weight: 700;
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visualy-hidden{
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inherit(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+/*header*/
+.page-header-pannel{
+  display:flex;
+}
+
+.page-header{
+  background-color: #FFFFFF;
+  width: 1200px;
+  height: 64px;
+}
+
+.navigation-list{
+  list-style: none;
+}
+
+.navigation-link{
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+
+}
+
+.navigation-user{
+  position: relative;
+}
+
+.navigation-link-loupe::before{
+content:"";
+position: absolute;
+width: 20px;
+height: 20px;
+background-image: url(/images/icon_header_search.svg) ;
+background-repeat: no-repeat;
+}
+
+.navigation-link-favourites::before{
+  content:"";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(/images/icon_header_heart.svg);
+  background-repeat: no-repeat;
+}
+
+.button-whant-here{
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #756157;
+  color: #FFFFFF;
+  padding: 8Px 34px;
+  border-radius: 4px;
+}
+
+/*main*/
+
+.main-index{
+  color: #333333;
+  background-color: #FFFFFF;
+  width: 1200px;
+height: 3557.86px;
+}
+.hero{
+  background-image: url(/images/Hero_Background.jpg);
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+  text-align: center;
+}
+.hero::before{
+  background-image: url(/images/hero_corners_for_background_divider.png);
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+}
+
+/*advantages*/
+
+.advantages{
+  text-align: center;
+  list-style: none;
+}
+
+.advantages-lead{   /*Седона - небольшой городок в Аризоне*/
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 620px;
+  height: 72px;
+  margin: 69px 290px 25px 290px;
+  margin-top: 69px;
+  }
+
+  .advantages-list{ /*Рассмотрим причины*/
+    font-size: 22px;
+    line-height: 26px;
+    width: 651px;
+    height: 26px;
+    margin: 0px 274.5px 90px 274px;
+    }
+
+
+.advantages-title{ /*заголовки приемуществ*/
+font-size: 24px;
+line-height: 28px;
+font-weight: 700px;
+text-transform: uppercase;
+width: 175px;
+height: 56px;
+padding: 102px 112.5px 62px 112.5px;
+
+}
+
+.advantages-of-city-item{
+width: 400px;
+height:385px;
+background-color:  rgba(131, 179, 211, 0.12);
+}
+
+.advantages-description{ /*описания приемуществ*/
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+}
+
+.background-blue{
+background-color:#82B3D3;
+color: #FFFFFF;
+}
+
+.advantages-description-blue{
+  width: 230px;
+  height: 63px;
+  padding: 0 85px 102px 85px;
+}
+
+.background-dark-gray{
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-title-grey{
+  padding: 112.5px 112.5px 62px 112.5px;
+}
+
+
+.advantages-description-grey{
+  width: 230px;
+  height: 42px;
+  padding: 0 85px 62px 85px;
+}
+
+.reccomendation-list{
+  text-align: center;
+  list-style: none;
+}
+
+.reccomendation-header{
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  width: 505px;
+  height: 72px;
+text-transform: uppercase;
+padding: 64px 347.5px 20px 345.5px;
+}
+
+.reccomendation-header-description{
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  width: 490px;
+  height: 26px;
+  padding: 0 355px 64px 355px;
+}
+
+.reccomendation-list-item{
+  width: 400px;
+  height:385px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.reccomendation-home{
+
+}
+
+.reccomendation-food{
+
+}
+
+.reccomendation-souvenirs{
+
+}
+
+/*footer*/
+
+.subscribe{
+  /*background-image: url(/images/footer_background_subscribe.jpg);*/
+  width: 1200px;
+  height: 414.86px;
+}
+
+.footer-social-list{
+  list-style: none;
+}
+
+.link-social-vk::before{
+  content:"";
+  position: absolute;
+  width: 24px;
+  height: 14px;
+  background-image: url(/images/catalog_social_vk.svg);
+  background-repeat: no-repeat;
+}
+
+.link-social-telegram::before{
+  content:"";
+  position: absolute;
+  width: 18px;
+  height: 15.1px;
+  background-image: url(/images/catalog_social_telegram.svg);
+  background-repeat: no-repeat;
+}
+
+.link-social-youtube::before{
+  content:"";
+  position: absolute;
+  width: 22px;
+  height: 17px;
+  background-image: url(/images/catalog_social_youtube.svg);
+  background-repeat: no-repeat;
+}
