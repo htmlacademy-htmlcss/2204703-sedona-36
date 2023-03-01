@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="hotels-style.css" rel="stylesheet">
+    <link href="/styles/index_style.css" rel="stylesheet">
   </head>
   <body>
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
@@ -41,15 +41,23 @@
 
 <main class="main-inner">
 <section class="hotels-catalog">
+  <img src="images/catalog_search_background.jpg" width="1200" height="412" alt="">
 <h1 class="hotels-catalog-title">Гостиницы Седоны</h1>
-<ol class="breadscrums">
-<li class="breadscrums-item">
-  <a class="breadscrums-link" href="index.html">
+<ol class="breadcrumbs">
+<li class="breadcrumbs-item">
+  <a class="breadcrumbs-link" href="index.html">
     <span class="visualy-hidden">Главная страница</span>
-    <img src="img/placeholder.svg" alt="картинка домика"> </a>
+    <img src="images/breadscrumbs_house.svg" alt="картинка домика"> </a>
 </li>
-<li class="breadscrums-item">
-  <a class="breadscrums-link">Гостиницы </a>
+
+<li class="breadcrumbs-item">
+  <a class="breadcrumbs-arrow">
+    <img src="images/breadscrumbs_arrow.svg" alt="стрелочка"> </a>
+</li>
+
+
+<li class="breadcrumbs-item">
+  <a class="breadcrumbs-link">Гостиницы </a>
 </li>
 </ol>
 
@@ -137,50 +145,66 @@
 <ul class="hotels-list">
 <li class="hotels-list-item">
 <a class="hotel-card-link" href="#">
-  <img class="hotel-photo" src="img/placeholder.jpg" alt="">
+  <img class="hotel-photo" src="images/catalog_amara_hotel-1.jpg" alt="вид на звездное небо из горного ущелья">
   <h3>Amara Resort & Spa</h3>
 </a>
 <p>Гостиница</p><b class="hotel-card-price">от 4000 ₽</b>
 <a class="button button-details" href="#">Подробнее</a>
 <button class="button button-favorites" type="button">В избранное</button>
-<img class="hotel-class" src="img/placeholder.svg" alt="классификация отеля четыре звездны">
+<div class="hotel-rating">
+  <img class="star-raring" src="images/catalog_icon_star.svg" alt="">
+  <img class="star-raring" src="images/catalog_icon_star.svg" alt="">
+  <img class="star-raring" src="images/catalog_icon_star.svg" alt="">
+  <img class="star-raring" src="images/catalog_icon_star.svg" alt="">
+</div>
 <div>Рейтинг: 8,5</div>
 </li>
 
 <li class="hotels-list-item">
 <a class="hotel-card-link" href="#">
-  <img class="hotel-photo" src="img/placeholder.jpg" alt="">
+  <img class="hotel-photo" src="images/catalog_villas_diavlo_hotel-2.jpg" alt="фотография скалы на фоне радуги">
   <h3>AVillas at Poco Diablo</h3>
 </a>
 <p>Гостиница</p><b class="hotel-card-price">от 5000 ₽</b>
 <a class="button button-details" href="#">Подробнее</a>
 <button class="button button-favorites favorites-added" type="button">В избранное</button>
-<img class="hotel-class" src="img/placeholder.svg" alt="классификация отеля четыре звездны">
+<div>
+<img class="star-raring" src="images/catalog_icon_star.svg" alt="">
+<img class="star-raring" src="images/catalog_icon_star.svg" alt="">
+<img class="star-raring" src="images/catalog_icon_star.svg" alt="">
+<img class="star-raring" src="images/catalog_icon_star.svg" alt="">
+</div>
 <div>Рейтинг: 9,2</div>
 </li>
 
 
 <li class="hotels-list-item">
 <a class="hotel-card-link" href="#">
-  <img class="hotel-photo" src="img/placeholder.jpg" alt="">
+  <img class="hotel-photo" src="images/catalog_desert_quail_hotel-3.jpg" alt="фото скалы на фоне голубого неба">
   <h3>Desert Quail Inn</h3>
 </a>
 <p>Гостиница</p><b class="hotel-card-price">от 2500 ₽</b>
 <a class="button button-details" href="#">Подробнее</a>
 <button class="button button-favorites" type="button">В избранное</button>
-<img class="hotel-class" src="img/placeholder.svg" alt="классификация отеля три звездны">
+<img class="star-raring" src="images/catalog_icon_star.svg" alt="">
+<img class="star-raring" src="images/catalog_icon_star.svg" alt="">
+<img class="star-raring" src="images/catalog_icon_star.svg" alt="">
 <div>Рейтинг: 6,9</div>
 </li>
 
 <li class="hotels-list-item">
   <a class="hotel-card-link" href="#">
-    <img class="hotel-photo" src="img/placeholder.jpg" alt="">
+    <img class="hotel-photo" src="images/catalog_greentree_hotel-4.jpg" alt="фото скалы на фоне звездного неба">
     <h3>GreenTree Inn</h3>
   </a>
   <p>Гостиница</p><b class="hotel-card-price">от 1500 ₽</b>
   <a class="button button-details" href="#">Подробнее</a>
 <button class="button button-favorites" type="button">В избранное</button>
-  <img class="hotel-class" src="img/placeholder.svg" alt="классификация отеля две звездны">
+
+  <div class="hotel-rating">
+    <img class="star-raring" src="images/catalog_icon_star.svg" alt="">
+    <img class="star-raring" src="images/catalog_icon_star.svg" alt="">
+  </div>
   <div>Рейтинг: 6,9</div>
   </li>
 
@@ -221,7 +245,7 @@
     <p> Только полезная информация и никакого спама, честное бойскаутское!</p>
   <form class="subscribe-email" action="https://echo.htmlacademy.ru/" method="post">
     <p class="subscribe-form">
-     <input type="email" id="email" placeholder="Ваш e-mail">
+     <input type="email" id="email" pattern="" placeholder="Ваш e-mail">
     </p>
   <button class="button button-subscribe" type="submit">подписаться</button>
   </form>
@@ -233,21 +257,21 @@
     <li class="footer-social-list-item">
       <a class="button" href="https://vk.com/htmlacademy">
       <span class="visualy-hidden">Вконтакте</span>
-      <img src="img/placeholder.svg" alt="логотип социальной сети Вконтакте">
+      <img src="images/catalog_social_vk.svg" width="24" height="14" alt="логотип социальной сети Вконтакте">
     </a>
     </li>
 
     <li class="footer-social-list-item">
       <a class="button" href="https://t.me/htmlacademy">
       <span class="visualy-hidden">Телеграм</span>
-      <img src="img/placeholder.svg" alt="логотип социальной сети телеграм">
+      <img src="images/catalog_social_telegram.svg" width="18" height="15,1" alt="логотип социальной сети телеграм">
     </a>
 
     </li>
     <li class="footer-social-list-item">
     <a class="button" href="https://www.youtube.com/user/htmlacademyru">
     <span class="visualy-hidden">Ютуб</span>
-    <img src="img/placeholder.svg" alt="логотип видео-канала ютуб">
+    <img src="images/catalog_social_youtube.svg" width="22" height="17" alt="логотип видео-канала ютуб">
   </a>
   </li>
   </ul>
@@ -255,10 +279,11 @@
   <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
   <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-    <img src="img/placeholder.svg" alt="логотип htmlacademy">
+    <img src="images/catalog_logo_htmlacademy.svg" width="114,9" height="32,9" alt="логотип htmlacademy">
   </a>
 
   </section>
+
 
   </footer>
 
