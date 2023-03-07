@@ -9,33 +9,34 @@
 <div class="site-container">
     <header class="page-header">
 
-        <nav class="main-navigation">
-          <a href="#">
-            <img class="logo" src="images/icon-header-logo.svg" height="70" width="140" alt="Логотип сайта">
-            </a>
-          <ul class="navigation-list">
-            <li class="navigation-list-item">
-              <a class="navigation-link navigation-link-current" href="main.html">Главная </a> </li>
-            <li class="navigation-list-item">
-              <a class="navigation-link" href="about.html">О Седоне </a> </li>
-              <li class="navigation-list-item">
-                <a class="navigation-link" href="hotels.html">Гостиницы</a> </li>
-      </ul>
+      <nav class="main-navigation">
+        <a href="#">
+          <img class="logo" src="images/icon-header-logo.svg" height="70" width="140" alt="Логотип сайта">
+          </a>
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a class="navigation-link navigation-link-current" href="main.html">Главная </a> </li>
+          <li class="navigation-list-item">
+            <a class="navigation-link" href="about.html">О Седоне </a> </li>
 
-      <ul class="navigation-list navigation-user">
+            <li class="navigation-list-item" >
+              <a class="navigation-link" href="hotels.html" data-current="current">Гостиницы</a> </li>
+    </ul>
 
-        <li class="navigation-user-item">
-          <a class="navigation-link navigation-link-loupe" href="#">
-            <span class="visualy-hidden">Поиск</span> </a> </li>
+    <ul class="navigation-list navigation-user">
 
-            <li class="navigation-user-item">
-          <a class="navigation-link navigation-link-favourites" href="#">
-            <span class="visualy-hidden">Избранное</span> </a> </li>
+      <li class="navigation-user-item navigation-link-loupe">
+        <a class="navigation-link " href="#">
+          <span class="visualy-hidden">Поиск</span> </a> </li>
 
-          <li class="navigation-user-item">
-            <a class="navigation-link button button-whant-here" href="#">Хочу сюда!</a> </li>
-          </ul>
-        </nav>
+          <li class="navigation-user-item navigation-link-favourites">
+        <a class="navigation-link" href="#">
+          <span class="visualy-hidden">Избранное</span> </a> </li>
+
+        <li class="navigation-user-item button-whant-here">
+          <a class="navigation-link navigation-link-button" href="#">Хочу сюда!</a> </li>
+        </ul>
+      </nav>
 
       </header>
 
@@ -174,22 +175,47 @@
 </footer>
 </div>
 
-<!--ВСПЛЫВАЮЩЕЕ ОКНО-->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--ВСПЛЫВАЮЩЕЕ ОКНО-->
+<div class="button button-close-popup"></div>
 <div class="popup visua_ly-hidden">Вскплывающее окно
 <section class="searching-hotel-popup">
 <h2 class="poup-header">Поиск гостиницы в Седоне</h2>
-<div class="button button-close-popup"></div>
-<form class="searching-hotel-form">
 
-<label class="form-label" for="checkin">Дата Заезда</label>
-<input type="text" id="checkin" value="01.09.2023" name="checkin-date" placeholder="27 апреля 2020" required>
-<p class="popup-comment-checkin visua__ly-hidden">Мы не можем отправить вас в прошлое.</p>
 
+<div class="searching-hotel-form">
+
+<ul class="searching-hotel-form-list">
+
+<li class="popup-list-item">
+  <label class="form-label" for="checkin">Дата Заезда</label>
+<input class="checkin-field" type="text" id="checkin" value="01.09.2023" name="checkin-date" placeholder="27 апреля 2020" required>
+<p class="popup-comment-checkin">Мы не можем отправить вас в прошлое.</p>
+</li>
+
+<li class="popup-list-item">
 <label class="form-label" for="checkout">Дата Выезда</label>
-<input type="text" id="checkout" value="01.09.2023" name="checkout-date" placeholder="1 сентября 2023" required>
-<p class="popup-comment-checkout visual__y-hidden">На эти даты есть свободные номера. Пока есть.</p>
+<input class="checkout-field" type="text" id="checkout" value="01.09.2023" name="checkout-date" placeholder="1 сентября 2023" required>
+<p class="popup-comment-checkout">На эти даты есть свободные номера. Пока есть.</p>
+</li>
 
+<li class="popup-list-item">
+<div class="container-adults-kids">
 <label class="form-label" >Взрослые</label>
 <span class="change-minus">
   <span>-</span>
@@ -200,11 +226,7 @@
 </span>
 
 <label class="form-label">Дети</label>
-<div class="attention" id="attention-message">
-<div class="attention-sign">
-  <p class="popup-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-</div>
-</div>
+<div class="attention" id="attention-message"></div>
 
 <span class="change-minus">
   <span>-</span>
@@ -212,9 +234,16 @@
 <input type="text" name="kids-count" value="1" placeholder="2" disabled="">
 <span class="change-plus">
   <span>+</span>
+</li>
+</div>
+
+  <div class="attention-sign">
+    <p class="attention-sign-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+  </div>
 </span>
 <button class="button button-search" type="submit">Найти</button>
-</form>
+</div>
+</ul>
 </section>
 </div>
 
