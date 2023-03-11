@@ -20,6 +20,9 @@ html{
 }
 
 input, button, fieldset{
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
   border: none;
   padding: 0;
   margin: 0;
@@ -68,11 +71,10 @@ body {
 width: 1200px;
 background-color: #FFFFFF;
 margin: 0 auto;
-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 .main-container{
   flex-grow: 1;
-
 }
 
 /*header*/
@@ -87,7 +89,7 @@ box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 .logo{
   padding-left: 70px;
   position: relative;
-  z-index: 100;
+  z-index: 1;
 }
 
 .main-navigation{  /*вся навигация в шапке*/
@@ -171,6 +173,24 @@ background-repeat: no-repeat;
   height: 20px;
   background-image: url(../images/icon-header-heart.svg);
   background-repeat: no-repeat;
+}
+
+.navigation-link-favourites a::after{
+  content:"";
+  width: 20px;
+  height: 20px;
+  background-color: #7DB54F;
+  border-radius:50%;
+  position: absolute;
+  margin: 11px 4px 33px 20px;
+  content: "12";
+  Font-size: 10px;
+  line-height: 10px;
+  font-weight: 400;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button-whant-here a{
@@ -452,6 +472,10 @@ margin-bottom: 20px;
   border-radius: 4px;
   text-decoration: none;
   margin-bottom: 96px;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  cursor: pointer;
 }
 
 
@@ -581,10 +605,66 @@ width: 331px;
 
 /*------------------------------всплывающее окно---------------------------------------*/
 
+.overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  visibility: hidden;
+  /* фон затемнения */
+  background-color:  rgba(242, 242, 242, 0.8);
+  position: fixed; /* фиксированное поцизионирование */
+  }
+  .overlay:target {
+  visibility: visible;
+  opacity: 1;
+  }
+
+  .popup{
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 14px;
+    z-index: 10;
+    display: block;
+    visibility: hidden;
+    margin: 0 auto;
+    width: 717px;
+    height: 576px;
+
+    /* фиксированное позиционирование, окно стабильно при прокрутке */
+    position: fixed; 
+    opacity: 0;
+
+    /* эффект перехода (появление) */
+    transition: all ease .5s;
+    }
+
+    /* активируем появление окна и затемнение фона */
+    .overlay:target+.popup {
+    top: 396Px; /* положение окна от верха страницы при появлении */
+    visibility: visible;
+    opacity: 1; /* убираем прозрачность */
+    }
+
+
+    /* формируем кнопку закрытия */
+.close{
+    width: 52px;
+    height: 52px;
+}
+
+  .close:before {
+  color: rgba(255, 255, 255, 0.9);
+  content: "X";
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+  font-size: 12px;
+  }
+
 .searching-hotel-popup{ /*блок Дата заезда, дата выезда, взрослые, дети, кнопка Найти*/
 background-color: #FFFFFF;
-Width:717px;
-
+Width:577px;
 display: flex;
 flex-direction: column;
 padding: 64px 70px;
@@ -599,6 +679,21 @@ border-radius: 30px;
   margin-bottom: 64px;
 }
 
+.close::before{
+  content: '';
+  position: absolute;
+  background-image: url(../images/icon-popup-cross.svg) ;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 64px 52px 460px 613px;
+  box-sizing: border-box;
+}
+
+
 .form-label{ /*Дата заезда, дата выезда, взрослые, дети*/
   font-size: 20px;
   line-height: 24px;
@@ -608,10 +703,10 @@ border-radius: 30px;
   font-size: 16px;
   line-height: 21px;
   color: #FF5757;
-
+  margin-left: 157px;
 }
 
-.checkin-field{
+.checkin-field{   /*поле ввода заезда*/
 height: 48px;
 width: 440px;
 background: #F2F2F2;
@@ -619,24 +714,41 @@ border-radius: 4px;
 font-size: 18px;
 line-height: 24px;
 font-weight: 700;
+margin-bottom: 4px;
+position: relative;
+margin-left: auto;
 }
 
-.searching-hotel-form-list{
+.checkin-field::before{
+  content:"";
+  position: absolute;
+  background-image: url(../images/icon-popup-calendar.png) ;
+  width: 70px;
+  height: 115px;
+  background-repeat: no-repeat;
+}
+
+.searching-hotel-form-list{ /*список элементов для строчек*/
   list-style: none;
 }
 
 
-.popup-list-item{
+.popup-list-item{ /*Три строчки таблицы*/
+  display: flex;
+  flex-wrap: wrap;
 height: 73px;
+margin-bottom: 23px;
+align-items: baseline;
 }
 
 .popup-comment-checkout{ /*На эти даты есть свободные номера. Пока есть.*/
   font-size: 16px;
   line-height: 21px;
   color: #333333;
+  margin-left: 157px;
 }
 
-.checkout-field{
+.checkout-field{ /*поле ввода выезда*/
   height: 48px;
   width: 440px;
   background: #F2F2F2;
@@ -644,30 +756,161 @@ height: 73px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  margin-bottom: 4px;
+  margin-left: auto;
 }
 
-.container-adults-kids{
+.container-adults-kids{ /*взрослые / дети */
 display: flex;
-flex-direction: row;
+height: 48px;
+align-items: baseline;
+gap: 88px;
 }
 
-.attention-sign{
-background-image: url(/images/popup_tooltip_atention.png);
-width: 256px;
-height: 152px;
+
+.adults-kids-label{
+display: flex;
+gap: 45px;
+align-items: center;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+}
+
+.kids-span{
+  display: flex;
+  gap:10px;
+  align-items: center;
+  }
+
+.container-input-counter{
+position: relative;
+width: 110px;
+height: 100%;
+}
+
+.input-counter-minus, .input-counter-plus{
+position: absolute;
+height: 100%;
+width: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+top: 0;
+}
+
+.input-counter{
+  width: 100%;
+  height: 100%;
+  background-color: #F2F2F2;
+  padding: 14px 40px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+}
+.input-counter-plus {
+right: 0;
+}
+.input-counter-minus{
+  left: 0;
+
+}
+
+.input-counter-minus::before, .input-counter-plus::before{
+content:'';
+width: 20px;
+height: 20px;
+background-image: url(/images/icon-minus.svg);
 background-repeat: no-repeat;
+background-position: center;
+
+}
+.input-counter-plus::before{
+  background-image: url(/images/icon-plus.svg);
 }
 
-.attention-sign-text{ /*Укажите количество детей,*/
-font-size: 15px;
-line-height: 21px;
-color: #FFFFFF;
-background-color: #333333;
-border-radius: 10px;
-width: 256px;
-padding: 15px 18px 18px 22px;
-box-sizing: border-box;
+.popup-count{ /*счетчик количества детей и взрослых*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  height: 48px;
+  background-color: #F2F2F2;
 }
+
+
+ .tooltip-button{
+ width: 26px;
+ height: 26px;
+ color:#FFFFFF;
+ background-color: #83B3D3;
+ border-radius: 50%;
+ border: none;
+ font-weight: 400;
+ }
+
+ [tooltip]{
+
+   position:relative;
+   display:inline-block;
+ }
+ [tooltip]::before {
+     content: "";
+     position: absolute;
+     top:-6px;
+     left:50%;
+     transform: translateX(-50%);
+     border-width: 4px 6px 0 6px;
+     border-style: solid;
+     border-color: #333333 transparent transparent     transparent;
+     z-index: 99;
+     display: none;
+ }
+
+ [tooltip-position='buttom']::before{ /*расположение тултипа*/
+   top:100%;
+   margin-top:8px;
+   transform: translateX(-50%) translatey(-100%) rotate(-180deg)
+ }
+
+ [tooltip]::after {
+     margin: 0;
+    content: attr(tooltip);
+     position: absolute;
+     left:50%;
+     top:-6px;
+     background: #333333;
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+     color: #fff;
+     font-size: 16px;
+     line-height: 20px;
+     width: 256px;
+     text-align: left;
+     border-radius: 10px;
+     pointer-events: none;
+     padding: 15px 18px 18px 22px;
+     z-index:99;
+     display: none;
+     box-sizing: border-box;
+ }
+
+ [tooltip-position='buttom']::after{
+   top:100%;
+   margin-top:8px;
+   transform: translateX(-50%) translateY(0%);
+ }
+
+
+ [tooltip]:hover::after,[tooltip]:hover::before {
+    display: block;
+ }
+
+
+
+
+
+
+
 
 .button-search{
   font-size: 20px;
@@ -721,10 +964,6 @@ input::placeholder{
 
 
 /*---------------------------КАТАЛОГ---------------------------------*/
-
-fieldset{
-  border:
-}
 
 .main-inner{
   background-color: #FFFFFF;
@@ -1114,7 +1353,7 @@ margin: 20px 20px 16px 20px;
 
 .rate{
   font-size: 16px;
-  line-height: 20ps;
+  line-height: 20px;
   background-color:#F2F2F2;
   padding: 9px 22px 8px 23px;
   border-radius: 4px;
