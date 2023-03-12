@@ -930,39 +930,6 @@ input::placeholder{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------------------------КАТАЛОГ---------------------------------*/
 
 .main-inner{
@@ -975,6 +942,7 @@ input::placeholder{
   padding:37px 70px;
   background-repeat: no-repeat;
   margin-bottom: 56px;
+height: auto;
 }
 
 .hotels-catalog-title{ /*Гостиницы Седоны*/
@@ -1077,8 +1045,8 @@ border-radius: 50%;
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 5px;
-top: 5px;
+  left: 4px;
+top: 6px;
   background-image: url(../images/vector.svg);
   background-repeat: no-repeat;
   content: "";
