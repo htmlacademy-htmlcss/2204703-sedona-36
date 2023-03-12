@@ -1082,11 +1082,6 @@ color: #FFFFFF;
 }
 
 
-
-
-
-
-
 .column-2{
   display: flex;
   flex-direction: column;
@@ -1094,7 +1089,7 @@ color: #FFFFFF;
   margin-right: 140px;
 }
 
-/*--------------------------ЦЕНА И БЕГУНОК--------------------------------------*/
+/*--------------------------ЦЕНА--------------------------------------*/
 
 .price-runner{
 margin-right: 70px;
@@ -1106,36 +1101,58 @@ input[type="number"]::-webkit-inner-spin-button{
 -webkit-appearance: none;
 }
 
-.price-input{
+.price-input{ /*блок два поля ввода и бегунок*/
   display: flex;
 flex-direction: column;
 }
-.input-min{
-  height: 48px;
-  width: 143px;
-  border-radius:  4px 0 0 4px;
-  font-size: 18px;
-line-height: 24px;
-font-weight: 700;
-background-color: #F2F2F2;
-}
 
-.input-max{
+.field-lower-price{
+border-radius: 4px 0 0 4px;
+}
+.heighter-price{
+  border-radius: 0 4px 4px 0;
+}
+.field-lower-price, .heighter-price{
 height: 48px;
 width: 143px;
-border-radius: 0 4px 4px 0;
 font-size: 18px;
 line-height: 24px;
 font-weight: 700;
 background-color: #F2F2F2;
+position: relative;
+color: #000000;
 }
 
-.field{
-display: flex;
-gap: 2px;
-margin-bottom: 48px;
+.field{  /*два поля вводв*/
+  display: flex;
+  gap: 2px;
+  margin-bottom: 48px;
+
+  }
+
+.min-price{ /*label-class ОТ*/
+position: absolute;
+opacity: 0.3;
+right: 20px;
+top: 12px;
 }
 
+.max-price{ /*label-class ДО*/
+  position: absolute;
+  opacity: 0.3;
+  right: 20px;
+  top: 12px;
+}
+
+.input-min, .input-max{
+width: 70px;
+display: block;
+margin: 12px 112px 12px 20px;
+background-color: #F2F2F2;
+}
+
+
+/*--------------------- БЕГУНОК--------------------------------*/
 .slider{
   height: 4px;
   width: 287px;
@@ -1143,15 +1160,15 @@ margin-bottom: 48px;
   position: relative;
 }
 
-.slider .progress{
+.slider .progress{ /*сама шкала*/
   height: 4px;
-  left: 206px;
+  left: 250px;
   right: 0;
   position: absolute;
   background-color: #63696d;
 }
 
-.range-input{
+.range-input{  /*бегунки*/
   position: relative;
 
 }
@@ -1165,7 +1182,7 @@ margin-bottom: 48px;
   -webkit-appearance: none;
 }
 
-input[type="range"]::-webkit-slider-thumb{
+input[type="range"]::-webkit-slider-thumb{ /*бегунок 1*/
 height: 20px;
 width: 20px;
 border-radius: 5px;
@@ -1174,7 +1191,7 @@ pointer-events: auto;
 background: #FFFFFF;
 }
 
-input[type="range"]::-moz-range-thumb{
+input[type="range"]::-moz-range-thumb{ /*бегунок 2*/
   height: 20px;
   width: 20px;
   border: none;

@@ -148,8 +148,16 @@
   <div class="price-input">
 
   <div class="field">
-    <input type="number" class="input-min" value="0">
-    <input type="number" class="input-max" value="9000">
+    <div class="field-lower-price">
+      <label class="min-price" for="input-min">от</label>
+    <input type="number" class="input-min" id="input-min" value="0" placeholder="0">
+  </div>
+
+  <div class="heighter-price">
+    <label class="max-price" for="input-max">до</label>
+    <input type="number" class="input-max" id="input-max" value="9000" placeholder="9000">
+  </div>
+
   </div>
 
 <div class="slider">
