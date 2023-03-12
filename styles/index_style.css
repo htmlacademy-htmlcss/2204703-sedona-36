@@ -1068,19 +1068,34 @@ color: #FFFFFF;
   border-radius: 4px;
 }
 
-.control-input[type="radio"]{
-  border-radius: 50%;
+.radio-list .control-mark{
+border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked + .control-mark::before {
-  content: "";
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
-
-  background-color: #242424;
-  border-radius: 50%;
-
+  width: 20px;
+  height: 20px;
+  left: 5px;
+top: 5px;
+  background-image: url(../images/vector.svg);
+  background-repeat: no-repeat;
+  content: "";
 }
 
+.control-input[type="radio"]:checked + .control-mark::before,
+.control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+left: 5px;
+top: 5px;
+  background-color:#3F5E72;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  content: "";
+}
 
 .column-2{
   display: flex;
