@@ -634,7 +634,7 @@ width: 331px;
     height: 576px;
 
     /* фиксированное позиционирование, окно стабильно при прокрутке */
-    position: fixed; 
+    position: fixed;
     opacity: 0;
 
     /* эффект перехода (появление) */
@@ -1047,6 +1047,46 @@ color: #FFFFFF;
   width: 151px;
   margin-right: 70px;
 }
+
+/*----------------------------------------------------------------*/
+
+/* Control */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control-input[type="radio"]{
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+
+  background-color: #242424;
+  border-radius: 50%;
+
+}
+
+
+
+
+
+
+
 .column-2{
   display: flex;
   flex-direction: column;
