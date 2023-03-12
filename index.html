@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="./images/favicon.svg" type="images/svg+xml">
     <link href="./styles/index_style.css" rel="stylesheet">
   </head>
   <body>
@@ -10,19 +11,22 @@
     <header class="page-header">
 
       <nav class="main-navigation">
+        <div class="container-navigation-logo">
         <a href="#">
-          <img class="logo" src="images/icon-header-logo.svg" height="70" width="140" alt="Логотип сайта">
+          <img class="logo" src="./images/icon-header-logo.svg" height="70" width="140" alt="Логотип сайта">
           </a>
+
         <ul class="navigation-list">
           <li class="navigation-list-item">
-            <a class="navigation-link navigation-link-current" href="main.html">Главная </a> </li>
+            <a class="navigation-link navigation-link-current" href="main.html" data-current="current">Главная </a> </li>
           <li class="navigation-list-item">
             <a class="navigation-link" href="about.html">О Седоне </a> </li>
 
             <li class="navigation-list-item" >
-              <a class="navigation-link" href="hotels.html" data-current="current">Гостиницы</a> </li>
-
+              <a class="navigation-link" href="hotels.html">Гостиницы</a> </li>
     </ul>
+  </div>
+
 
     <ul class="navigation-list navigation-user">
 
@@ -46,7 +50,7 @@
         <section class="hero">
         <h1 class=" visualy-hidden">Wellcome to Sedona</h1>
         <div class="sign-welcome-to-sedona">
-        <img src="images/sign-welcome-to-sedona.png" width="458" height="352" alt="Wellcome to the gorgeous Sedona, because Grand canyon sucks!">
+        <img src="./images/sign-welcome-to-sedona.png" width="458" height="352" alt="Wellcome to the gorgeous Sedona, because Grand canyon sucks!">
         </div>
         </section>
 
@@ -152,19 +156,19 @@
 <ul class="footer-social-list">
 
   <li class="footer-social-list-item">
-    <a class="link-social-vk" href="https://vk.com/htmlacademy"><img src="images/catalog-social-vk.svg" width="24" height="14">
+    <a class="link-social-vk" href="https://vk.com/htmlacademy"><img src="./images/catalog-social-vk.svg" width="24" height="14">
     <span class="visualy-hidden">перейти на страницу во Вконтакте</span>
       </a>
   </li>
 
   <li class="footer-social-list-item">
-    <a class="link-social-telegram" href="https://t.me/htmlacademy"><img src="images/catalog-social-telegram.svg" width="18" height="15">
+    <a class="link-social-telegram" href="https://t.me/htmlacademy"><img src="./images/catalog-social-telegram.svg" width="18" height="15">
     <span class="visualy-hidden">перейти в канал в Телеграм</span>
       </a>
 
   </li>
   <li class="footer-social-list-item">
-  <a class="link-social-youtube" href="https://www.youtube.com/user/htmlacademyru"><img src="images/catalog-social-youtube.svg" width="22" height="17">
+  <a class="link-social-youtube" href="https://www.youtube.com/user/htmlacademyru"><img src="./images/catalog-social-youtube.svg" width="22" height="17">
   <span class="visualy-hidden">перейти на страницу в Ютуб</span>
  </a>
 </li>
@@ -173,7 +177,7 @@
 <a class="footer-contact-phone block-social-2" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
 
-<a class="htmlacademy-link block-social-3" href="https://htmlacademy.ru/"><img src="../images/catalog-logo-htmlacademy.svg" width="115" height="33">
+<a class="htmlacademy-link block-social-3" href="https://htmlacademy.ru/"><img src="./images/catalog-logo-htmlacademy.svg" width="115" height="33">
   <span class="visualy-hidden">перейти на страницу академии</span>
 </a>
 
@@ -183,7 +187,7 @@
 </div>
 
 <!---------------------------------------ВСПЛЫВАЮЩЕЕ ОКНО---------------------------------------------------------------->
-<a href="#x" class="overlay" id="container-popup-window"></a>
+<a href="#" class="overlay" id="container-popup-window"></a>
 
   <div class="popup">
     <a class="close" title="Закрыть" href="#close"></a>
@@ -237,7 +241,7 @@
     <label class="adults-kids-label">
 
     <span class="kids-span">Дети:
-    <button class="tooltip-button" tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно." tooltip-position="buttom"> i </button>
+    <span class="tooltip-button" tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно." tooltip-position="buttom"> i </span>
     </span>
 
     <div class="container-input-counter">

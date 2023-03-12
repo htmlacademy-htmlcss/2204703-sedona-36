@@ -3,7 +3,7 @@
   font-family: "PT Sans";
   font-style: regular;
   font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -11,8 +11,12 @@
   font-family: "PT Sans";
   font-style: regular;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
+}
+
+*{
+  box-sizing: border-box;
 }
 
 html{
@@ -84,10 +88,11 @@ box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
   background-color: #FFFFFF;
   height:64px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .logo{
-  padding-left: 70px;
   position: relative;
   z-index: 1;
 }
@@ -95,19 +100,24 @@ box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 .main-navigation{  /*вся навигация в шапке*/
   display: flex;
   flex-direction: row;
-  width: 1200px;
+  width: 100%;
   margin: 0;
   align-items: center;
+  justify-content: space-between;
+}
+
+.container-navigation-logo{
+display:flex;
+gap: 28px;
+height: 100%;
 }
 
 .navigation-list{   /*список: Главная / О седоне / Гостиницы*/
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin-left: 30px;
   padding: 0;
   height: 100%;
-
 }
 
 .navigation-list-item{ /*элементы: Главная / О седоне / Гостиницы*/
@@ -134,8 +144,6 @@ align-items: center;
 
 .navigation-user{  /*Навигация юзера с иконками*/
 min-width: 268px;
-margin-left: auto;
-margin-right: 70px;
 }
 
 .navigation-user-item{
@@ -455,7 +463,6 @@ margin-bottom: 20px;
   display: flex;
   font-size: 22px;
   line-height: 26px;
-  padding: 8px 50px;
   width: 592px;
   margin: 0 auto;
   margin-bottom: 54px;
@@ -666,7 +673,7 @@ width: 331px;
 
 .searching-hotel-popup{ /*блок Дата заезда, дата выезда, взрослые, дети, кнопка Найти*/
 background-color: #FFFFFF;
-Width:577px;
+Width:717px;
 display: flex;
 flex-direction: column;
 padding: 64px 70px;
@@ -823,13 +830,13 @@ right: 0;
 content:'';
 width: 20px;
 height: 20px;
-background-image: url(/images/icon-minus.svg);
+background-image: url(../images/icon-minus.svg);
 background-repeat: no-repeat;
 background-position: center;
 
 }
 .input-counter-plus::before{
-  background-image: url(/images/icon-plus.svg);
+  background-image: url(../images/icon-plus.svg);
 }
 
 .popup-count{ /*счетчик количества детей и взрослых*/
@@ -850,6 +857,7 @@ background-position: center;
  border-radius: 50%;
  border: none;
  font-weight: 400;
+ text-align: center;
  }
 
  [tooltip]{
@@ -904,7 +912,7 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
  }
 
 
- [tooltip]:hover::after,[tooltip]:hover::before {
+ .tooltip-button:hover::after, .tooltip-button:hover::before {
     display: block;
  }
 
@@ -1133,9 +1141,10 @@ top: 12px;
 }
 
 .input-min, .input-max{
-width: 70px;
+width: 100%;
+height: 100%;
 display: block;
-margin: 12px 112px 12px 20px;
+padding-left: 20px;
 background-color: #F2F2F2;
 }
 
@@ -1287,7 +1296,7 @@ gap:8px;
   position: absolute;
   width: 16px;
   height: 14px;
-  background-image: url(/images/icon-view-catalog-small-icons.png);
+  background-image: url(../images/icon-view-catalog-small-icons.png);
   background-repeat: no-repeat;
   margin: auto;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -1298,7 +1307,7 @@ gap:8px;
   position: absolute;
   width: 16px;
   height: 14px;
-  background-image: url(/images/icon-view-catalog-big-icons.png);
+  background-image: url(../images/icon-view-catalog-big-icons.png);
   background-repeat: no-repeat;
   margin: auto;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -1309,7 +1318,7 @@ gap:8px;
   position: absolute;
   width: 16px;
   height: 14px;
-  background-image: url(/images/icon-view-catalog-list.png);
+  background-image: url(../images/icon-view-catalog-list.png);
   background-repeat: no-repeat;
   margin: auto;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -1372,6 +1381,9 @@ margin: 20px 20px 16px 20px;
 }
 
 .button-details{ /*Подробнее*/
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
   background-color: #756157;
   border-radius: 4px;
   text-decoration: none;
@@ -1441,7 +1453,12 @@ margin: 20px 20px 16px 20px;
 }
 
 .pagination-link{
-  color:#FFFFFF
+  color:#FFFFFF;
+  display:flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination-current{
