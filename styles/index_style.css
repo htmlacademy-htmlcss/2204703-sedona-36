@@ -102,8 +102,7 @@ box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
 .navigation-list{   /*список: Главная / О седоне / Гостиницы*/
   display: flex;
-  flex-direction: row;
-  justify-content: space-between ;
+  flex-wrap: wrap;
   list-style: none;
   margin-left: 30px;
   padding: 0;
@@ -134,7 +133,7 @@ align-items: center;
 }
 
 .navigation-user{  /*Навигация юзера с иконками*/
-width: 268px;
+min-width: 268px;
 margin-left: auto;
 margin-right: 70px;
 }
@@ -153,7 +152,7 @@ margin-right: 70px;
 }
 
 .navigation-link-loupe{
-  width: 44px;
+  min-width: 44px;
 }
 .navigation-link-loupe a::before{
 content:"";
@@ -164,7 +163,8 @@ background-repeat: no-repeat;
 }
 
 .navigation-link-favourites{
-  width: 44px;
+  min-width: 44px;
+  margin-right: 20px;
 }
 
 .navigation-link-favourites a::before{
@@ -639,13 +639,15 @@ width: 331px;
 
     /* эффект перехода (появление) */
     transition: all ease .5s;
+    box-sizing: border-box;
     }
 
     /* активируем появление окна и затемнение фона */
     .overlay:target+.popup {
-    top: 396Px; /* положение окна от верха страницы при появлении */
-    visibility: visible;
-    opacity: 1; /* убираем прозрачность */
+      top: 50%;
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-50%);
     }
 
 
@@ -698,6 +700,11 @@ border-radius: 30px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  align-items: center;
+  width: 100%;
 }
 .popup-comment-checkin{ /*Мы не можем отправить вас в прошлое.*/
   font-size: 16px;
@@ -706,9 +713,15 @@ border-radius: 30px;
   margin-left: 157px;
 }
 
-.checkin-field{   /*поле ввода заезда*/
-height: 48px;
-width: 440px;
+.checkin-date-container, .checkout-date-container{
+  position: relative;
+  width: 440px;
+  height: 100%;
+}
+
+.checkin-field, .checkout-field{   /*поле ввода заезда*/
+height: 100%;
+width: 100%;
 background: #F2F2F2;
 border-radius: 4px;
 font-size: 18px;
@@ -717,15 +730,17 @@ font-weight: 700;
 margin-bottom: 4px;
 position: relative;
 margin-left: auto;
+box-sizing: border-box;
+padding: 12px 42px 12px 20px;
 }
 
-.checkin-field::before{
-  content:"";
-  position: absolute;
-  background-image: url(../images/icon-popup-calendar.png) ;
-  width: 70px;
-  height: 115px;
-  background-repeat: no-repeat;
+.calendar-img{
+background-image: url(../images/icon-popup-calendar.svg);
+position: absolute;
+width: 20px;
+height: 20px;
+top: 14px;
+right: 20px;
 }
 
 .searching-hotel-form-list{ /*список элементов для строчек*/
@@ -746,18 +761,6 @@ align-items: baseline;
   line-height: 21px;
   color: #333333;
   margin-left: 157px;
-}
-
-.checkout-field{ /*поле ввода выезда*/
-  height: 48px;
-  width: 440px;
-  background: #F2F2F2;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  margin-bottom: 4px;
-  margin-left: auto;
 }
 
 .container-adults-kids{ /*взрослые / дети */
@@ -1006,12 +1009,13 @@ color: #FFFFFF;
 
 .container-catalog-search{ /*Инфраструктура Тип жилья и т.д.*/
   display: flex;
-  flex-direction: row;
   width: 1060px;
 }
 
-
 .column-1{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 151px;
   margin-right: 70px;
 }
@@ -1068,6 +1072,7 @@ top: 5px;
 .column-2{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 151px;
   margin-right: 140px;
 }

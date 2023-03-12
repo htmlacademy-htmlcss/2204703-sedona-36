@@ -21,6 +21,7 @@
 
             <li class="navigation-list-item" >
               <a class="navigation-link" href="hotels.html" data-current="current">Гостиницы</a> </li>
+
     </ul>
 
     <ul class="navigation-list navigation-user">
@@ -134,7 +135,7 @@
   <p class="subscribe-header-description"> Только полезная информация и никакого спама, честное бойскаутское!</p>
 <form class="subscribe-email" action="https://echo.htmlacademy.ru/" method="post">
   <p class="subscribe-form">
-   <input type="email" id="email" pattern="" placeholder="Ваш e-mail">
+   <input type="email" id="email"  placeholder="Ваш e-mail">
   </p>
 <button class="button-subscribe-email" type="submit">подписаться</button>
 </form>
@@ -196,14 +197,23 @@
     <ul class="searching-hotel-form-list">
 
     <li class="popup-list-item">
-      <label class="form-label" for="checkin">Дата Заезда:</label>
+      <label class="form-label" for="checkin">Дата Заезда:
+
+      <div class="checkin-date-container">
     <input class="checkin-field" type="text" id="checkin" value="01.09.2023" name="checkin-date" placeholder="27 апреля 2020" required>
+    <span class="calendar-img"></span>
+  </div>
+</label>
     <p class="popup-comment-checkin">Мы не можем отправить вас в прошлое.</p>
     </li>
 
     <li class="popup-list-item">
-    <label class="form-label" for="checkout">Дата Выезда:</label>
+    <label class="form-label" for="checkout">Дата Выезда:
+    <div class="checkout-date-container">
     <input class="checkout-field" type="text" id="checkout" value="01.09.2023" name="checkout-date" placeholder="1 сентября 2023" required>
+    <span class="calendar-img"></span>
+  </div>
+  </label>
     <p class="popup-comment-checkout">На эти даты есть свободные номера. Пока есть.</p>
     </li>
 
@@ -224,8 +234,9 @@
 
 
 
-    <label class="adults-kids-label"><span class="kids-span">Дети:
+    <label class="adults-kids-label">
 
+    <span class="kids-span">Дети:
     <button class="tooltip-button" tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно." tooltip-position="buttom"> i </button>
     </span>
 
