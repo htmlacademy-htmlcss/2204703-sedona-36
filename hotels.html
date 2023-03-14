@@ -19,7 +19,7 @@
 
           <ul class="navigation-list">
             <li class="navigation-list-item">
-              <a class="navigation-link navigation-link-current" href="main.html">Главная </a> </li>
+              <a class="navigation-link navigation-link-current" href="index.html">Главная </a> </li>
             <li class="navigation-list-item">
               <a class="navigation-link" href="about.html">О Седоне </a> </li>
 
@@ -40,7 +40,7 @@
             <span class="visualy-hidden">Избранное</span> </span></a> </li>
 
           <li class="navigation-user-item button-whant-here">
-            <a class="navigation-link navigation-link-button" href="#">Хочу сюда!</a> </li>
+            <a class="navigation-link navigation-link-button brown-button" href="#">Хочу сюда!</a> </li>
           </ul>
         </nav>
 
@@ -180,15 +180,16 @@
 </div>
 
 <div class="column-4">
-  <button class="button button-apply" type="submit">Применить</button>
+  <button class="button button-apply blue-button" type="submit">Применить</button>
   <button class="button button-reset" type="submit">Сбросить</button>
   </div>
 </section>
 
 <!-----------------------------------Секция с гостиницами------------------------>
 
-
+<div class="container-view-catalog">
 <section class="searching-result-main">
+
   <div class="container-result-view">
 <h2 class="searching-result">Найдено гостиниц: 38</h2>
 <select class="select-control" aria-label="Соортировка">
@@ -232,8 +233,8 @@
 
 <div class="hotel-card-category">Гостиница</div>
 <div class="hotel-card-price">от 4000 ₽</div>
-<a class="button button-details" href="#">Подробнее</a>
-<button class="button button-favorites" type="button">В избранное</button>
+<a class="button button-details brown-button" href="#">Подробнее</a>
+<button class="button button-favorites blue-button" type="button">В избранное</button>
 <div class="hotel-rating">
   <img class="star-raring" src="./images/catalog-icon-star.svg" alt="">
   <img class="star-raring" src="./images/catalog-icon-star.svg" alt="">
@@ -243,12 +244,6 @@
 <div class="rate">Рейтинг: 8,5</div>
 </div>
 </li>
-
-
-
-
-
-
 
 <li class="hotels-list-item">
 <a class="hotel-card-link" href="#">
@@ -260,8 +255,8 @@
 
 <div class="hotel-card-category">Гостиница</div>
 <div class="hotel-card-price">от 5000 ₽</div>
-<a class="button button-details" href="#">Подробнее</a>
-<button class="button button-favorites favorites-added" type="button">В избранное</button>
+<a class="button button-details brown-button" href="#">Подробнее</a>
+<button class="button button-favorites favorites-added green-button" type="button">В избранном</button>
 
 <div class="hotel-rating">
 <img class="star-raring" src="./images/catalog-icon-star.svg" alt="">
@@ -275,7 +270,6 @@
 </div>
 </li>
 
-
 <li class="hotels-list-item">
 <a class="hotel-card-link" href="#">
   <img class="hotel-photo" src="./images/catalog-desert-quail-hotel-3.jpg" alt="фото скалы на фоне голубого неба">
@@ -284,8 +278,8 @@
 <div class="container-hotel-card-details">
 <div class="hotel-card-category">Гостиница</div>
 <div class="hotel-card-price">от 2500 ₽</div>
-<a class="button button-details" href="#">Подробнее</a>
-<button class="button button-favorites" type="button">В избранное</button>
+<a class="button button-details brown-button" href="#">Подробнее</a>
+<button class="button button-favorites blue-button" type="button">В избранное</button>
 <div class="hotel-rating">
 <img class="star-raring" src="./images/catalog-icon-star.svg" alt="">
 <img class="star-raring" src="./images/catalog-icon-star.svg" alt="">
@@ -303,8 +297,8 @@
   <div class="container-hotel-card-details">
   <div class="hotel-card-category">Гостиница</div>
   <div class="hotel-card-price">от 1500 ₽</div>
-  <a class="button button-details" href="#">Подробнее</a>
-<button class="button button-favorites" type="button">В избранное</button>
+  <a class="button button-details brown-button" href="#">Подробнее</a>
+<button class="button button-favorites blue-button" type="button">В избранное</button>
   <div class="hotel-rating">
     <img class="star-raring" src="./images/catalog-icon-star.svg" alt="">
     <img class="star-raring" src="./images/catalog-icon-star.svg" alt="">
@@ -312,7 +306,7 @@
   <div class="rate">Рейтинг: 6,9</div>
 </div>
   </li>
-
+  
 </ul>
 
   <div class="separation-line"></div>
@@ -344,7 +338,7 @@
 </li>
 
 </ul>
-
+</div>
 <section class="subscribe-page-catalog">
   <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
   <p class="subscribe-header-description"> Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -360,7 +354,7 @@
 </div>
 </section>
 
-<footer>
+<footer class="main-footer">
 
   <section class="footer-social">
   <h2 class="visualy-hidden"> Контакты </h2>
@@ -368,22 +362,27 @@
 <ul class="footer-social-list">
 
   <li class="footer-social-list-item">
-    <a class="link-social-vk" href="https://vk.com/htmlacademy"><img src="./images/catalog-social-vk.svg" width="24" height="14">
+    <a class="link-social" href="https://vk.com/htmlacademy"><img src="./images/catalog-social-vk.svg" width="24" height="14">
     <span class="visualy-hidden">перейти на страницу во Вконтакте</span>
       </a>
   </li>
 
   <li class="footer-social-list-item">
-    <a class="link-social-telegram" href="https://t.me/htmlacademy"><img src="./images/catalog-social-telegram.svg" width="18" height="15">
+    <a class="link-social" href="https://t.me/htmlacademy"><img src="./images/catalog-social-telegram.svg" width="18" height="15">
     <span class="visualy-hidden">перейти в канал в Телеграм</span>
       </a>
 
   </li>
   <li class="footer-social-list-item">
-  <a class="link-social-youtube" href="https://www.youtube.com/user/htmlacademyru"><img src="./images/catalog-social-youtube.svg" width="22" height="17">
+  <a class="link-social" href="https://www.youtube.com/user/htmlacademyru"><img src="./images/catalog-social-youtube.svg" width="22" height="17">
   <span class="visualy-hidden">перейти на страницу в Ютуб</span>
  </a>
 </li>
+
+
+
+
+
 </ul>
 
 <a class="footer-contact-phone block-social-2" href="tel:+78128121212">+7 (812) 812-12-12</a>
