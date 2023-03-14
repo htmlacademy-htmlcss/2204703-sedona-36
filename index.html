@@ -39,7 +39,7 @@
           <span class="visualy-hidden">Избранное</span> </span></a> </li>
 
         <li class="navigation-user-item button-whant-here">
-          <a class="navigation-link navigation-link-button" href="#">Хочу сюда!</a> </li>
+          <a class="navigation-link navigation-link-button brown-button" href="#">Хочу сюда!</a> </li>
         </ul>
       </nav>
 
@@ -128,27 +128,27 @@
 <p class="searching-header-description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</br></p>
 
 
-<a href="#container-popup-window" class="button-search-hotel">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+<a href="#container-popup-window" class="button-search-hotel brown-button" id="open_button_id">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
 
 
 </section>
 </div>
 
 <section class="subscribe">
-  <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
+  <h2 class="subscribe-header">Подпишитесь на рассылку</h2> 
   <p class="subscribe-header-description"> Только полезная информация и никакого спама, честное бойскаутское!</p>
 <form class="subscribe-email" action="https://echo.htmlacademy.ru/" method="post">
   <p class="subscribe-form">
    <input type="email" id="email"  placeholder="Ваш e-mail">
   </p>
-<button class="button-subscribe-email" type="submit">подписаться</button>
+<button class="button-subscribe-email blue-button" type="submit" disabled>подписаться</button>
 </form>
 </section>
 
 </main>
 
 
-<footer>
+<footer class="main-footer">
 
   <section class="footer-social">
   <h2 class="visualy-hidden"> Контакты </h2>
@@ -156,19 +156,19 @@
 <ul class="footer-social-list">
 
   <li class="footer-social-list-item">
-    <a class="link-social-vk" href="https://vk.com/htmlacademy"><img src="./images/catalog-social-vk.svg" width="24" height="14">
+    <a class="link-social" href="https://vk.com/htmlacademy"><img src="./images/catalog-social-vk.svg" width="24" height="14">
     <span class="visualy-hidden">перейти на страницу во Вконтакте</span>
       </a>
   </li>
 
   <li class="footer-social-list-item">
-    <a class="link-social-telegram" href="https://t.me/htmlacademy"><img src="./images/catalog-social-telegram.svg" width="18" height="15">
+    <a class="link-social" href="https://t.me/htmlacademy"><img src="./images/catalog-social-telegram.svg" width="18" height="15">
     <span class="visualy-hidden">перейти в канал в Телеграм</span>
       </a>
 
   </li>
   <li class="footer-social-list-item">
-  <a class="link-social-youtube" href="https://www.youtube.com/user/htmlacademyru"><img src="./images/catalog-social-youtube.svg" width="22" height="17">
+  <a class="link-social" href="https://www.youtube.com/user/htmlacademyru"><img src="./images/catalog-social-youtube.svg" width="22" height="17">
   <span class="visualy-hidden">перейти на страницу в Ютуб</span>
  </a>
 </li>
@@ -187,10 +187,10 @@
 </div>
 
 <!---------------------------------------ВСПЛЫВАЮЩЕЕ ОКНО---------------------------------------------------------------->
-<a href="#" class="overlay" id="container-popup-window"></a>
+<div class="overlay" id="overlay_id">
 
   <div class="popup">
-    <a class="close" title="Закрыть" href="#close"></a>
+    <a class="close" id="close_button_id" title="Закрыть"></a>
 
     <section class="searching-hotel-popup">
     <h2 class="poup-header">Поиск гостиницы в Седоне</h2>
@@ -254,15 +254,15 @@
     </div>
 
     </span>
-    <button class="button button-search" type="submit">Найти</button>
+    <button class="button button-search blue-button" type="submit">Найти</button>
     </div>
     </ul>
     </section>
     </div>
   </div>
-
-  <!----------------------------------------------------------------------------------------------->
-
+</div>
+  <!----------------------------------------script--------------------------------------------------->
+  <script src="./code.js"></script>
 
 
 
