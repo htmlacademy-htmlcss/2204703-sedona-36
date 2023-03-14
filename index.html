@@ -139,9 +139,9 @@
   <p class="subscribe-header-description"> Только полезная информация и никакого спама, честное бойскаутское!</p>
 <form class="subscribe-email" action="https://echo.htmlacademy.ru/" method="post">
   <p class="subscribe-form">
-   <input type="email" id="email"  placeholder="Ваш e-mail">
+   <input type="email" id="email"  placeholder="Ваш e-mail" class="input-base-style">
   </p>
-<button class="button-subscribe-email blue-button" type="submit" disabled>подписаться</button>
+<button class="button-subscribe-email blue-button" type="submit">подписаться</button>
 </form>
 </section>
 
@@ -227,7 +227,7 @@
       <label class="form-label" for="checkin">Дата Заезда:
 
       <div class="checkin-date-container">
-    <input class="checkin-field" type="text" id="checkin" value="27 апреля 2020" name="checkin-date" placeholder="27 апреля 2020" required>
+    <input class="checkin-field input-base-style" type="text" id="checkin" value="27 апреля 2020" name="checkin-date" placeholder="27 апреля 2020" required>
     <span class="calendar-img"></span>
   </div>
 </label>
@@ -237,7 +237,7 @@
     <li class="popup-list-item">
     <label class="form-label" for="checkout">Дата Выезда:
     <div class="checkout-date-container">
-    <input class="checkout-field" type="text" id="checkout" value="1 сентября 2023" name="checkout-date" placeholder="1 сентября 2023" required>
+    <input class="checkout-field input-base-style" type="text" id="checkout" value="1 сентября 2023" name="checkout-date" placeholder="1 сентября 2023" required>
     <span class="calendar-img"></span>
   </div>
   </label>
@@ -253,9 +253,15 @@
 
 
     <div class="container-input-counter">
-      <span class="input-counter-minus"></span>
+      <span class="input-counter-minus"><button class="counter-button"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 9V11H17V9H3Z" fill="currentColor" >
+        </svg>
+        </button></span>
       <input type="number" class="input-counter" value="2">
-      <span class="input-counter-plus"></span>
+      <span class="input-counter-plus"><button class="counter-button"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
+        </svg>
+        </button></span>
     </div>
     </label>
 
@@ -268,9 +274,15 @@
     </span>
 
     <div class="container-input-counter">
-      <span class="input-counter-minus"></span>
+      <span class="input-counter-minus"><button class="counter-button"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 9V11H17V9H3Z" fill="currentColor" />
+        </svg>
+      </button></span>
       <input type="number" class="input-counter" value="2">
-      <span class="input-counter-plus"></span>
+      <span class="input-counter-plus"><button class="counter-button"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor" />
+        </svg>
+      </button></span>
     </div>
     </label>
     </li>
