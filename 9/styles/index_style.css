@@ -31,12 +31,18 @@ input, button, fieldset{
   padding: 0;
   margin: 0;
   cursor:pointer;
+  outline: none;
 }
 
 a{
   text-decoration: none;
   color: currentColor;
   cursor:pointer;
+  outline: none;
+}
+
+a:focus{
+  outline: none;
 }
 
 h1, h2, h3, h4, p{
@@ -48,6 +54,38 @@ ul, ol, li{
 margin: 0;
 padding: 0;
 }
+
+.input-base-style{
+    background-color: #F2F2F2;
+    padding: 12px 20px;
+    border-radius: 4px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .input-base-style::placeholder {
+    color: #000000;
+    opacity: 0.6;
+  }
+
+  .input-base-style:hover{
+    background-color: #E6E6E6;
+  }
+
+  .input-base-style:not(:placeholder-shown):focus{
+    border: 2px solid #000000;
+    color: #000000;
+  }
+
+  .input-base-style:focus{
+    border: 3px solid #83B3D3;
+    background-color: #E6E6E6;
+  }
+
+
+
 /*-------------------------СОСТОЯНИЯ КНОПОК-------------------------------------------------*/
 
 .blue-button:hover,
@@ -66,13 +104,24 @@ background-color: #82B3D3;
 background-color: #615048;
 }
 
+.brown-button:disabled{
+  background: #E5E5E5;
+}
+
 .brown-button:active{
+color: rgba(255, 255, 255, 0.3);
+}
+
+.blue-button:disabled{
+  background: #E5E5E5;
   background-color: #756157;
-  color: rgba(255, 255, 255, 0.3);
+}
+.green-button:disabled{
+  background: #E5E5E5;
 }
 
 .button-reset:hover{
-  Opacity: 60%;
+  opacity: 60%;
 }
 .button-reset:focus{
   border: solid 3px #83B3D3;
@@ -83,7 +132,7 @@ background-color: #615048;
 color: rgba(255, 255, 255, 0.3);
 }
 .button-reset:disabled{
-  Opacity: 10%;
+  opacity: 10%;
 }
 
 .green-button:hover,
@@ -96,9 +145,6 @@ background-color: #6C9E42;
   color:rgba(255, 255, 255, 0.3);
 }
 
-.button-disabled{
-  background: #E5E5E5;
-}
 
 /*--------------------------------------------------------------------------*/
 .visualy-hidden{
@@ -800,15 +846,7 @@ box-sizing: border-box;
 padding: 12px 42px 12px 20px;
 }
 /*---------------------------------------------------------*/
-.checkin-field:hover,
-.checkout-field:hover{
 
-}
-
-.checkin-field:hover,
-.checkout-field:hover{
-
-}
 
 .calendar-img{
 background-image: url(../images/icon-popup-calendar.svg);
@@ -879,6 +917,24 @@ top: 0;
 cursor:pointer;
 }
 
+.counter-button{
+color: rgba(117, 97, 87, 0.3);
+width: 20px;
+height: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.counter-button:hover{
+  color: #000000;
+}
+.counter-button:focus{
+  color: #000000;
+  border: 3px solid #82B3D3;
+border-radius: 4px;
+}
+
 .input-counter{
   width: 100%;
   height: 100%;
@@ -893,21 +949,9 @@ right: 0;
 }
 .input-counter-minus{
   left: 0;
-
 }
 
-.input-counter-minus::before, .input-counter-plus::before{
-content:'';
-width: 20px;
-height: 20px;
-background-image: url(../images/icon-minus.svg);
-background-repeat: no-repeat;
-background-position: center;
 
-}
-.input-counter-plus::before{
-  background-image: url(../images/icon-plus.svg);
-}
 
 .popup-count{ /*счетчик количества детей и взрослых*/
   display: flex;
@@ -1199,10 +1243,17 @@ width: 143px;
 font-size: 18px;
 line-height: 24px;
 font-weight: 700;
-background-color: #F2F2F2;
 position: relative;
 color: #000000;
 }
+
+.input-min{
+  border-radius: 4px 0 0 4px;
+  }
+
+  .input-max{
+    border-radius: 0 4px 4px 0;
+    }
 
 .field{  /*два поля вводв*/
   display: flex;
@@ -1231,6 +1282,8 @@ display: block;
 padding-left: 20px;
 background-color: #F2F2F2;
 }
+
+
 
   .input-min:hover,
   .input-max:hover{
@@ -1399,24 +1452,25 @@ gap:8px;
 }
 
 
-.view-icons-catog-item{ /*иконки*/
+
+
+.view-button:hover{
+  border: 2px solid #000000;
+}
+
+.view-button:focus{
+  border: 2px solid #68A2CA;
+}
+
+.view-button:active{
+  border: 2px solid #000000;
+}
+.view-button{
   height: 48px;
   width: 48px;
-  border: solid 2px #E5E5E5;
+  border: 2px  solid #E5E5E5;
   border-radius: 4px;
   position: relative;
-}
-
-.view-icons-catog-item:hover{
-  border: solid 2px #000000;
-}
-
-.view-icons-catog-item:focus{
-  border: solid 2px #68A2CA;
-}
-
-.view-icons-catog-item:active{
-  border: solid 2px #000000;
 }
 
 .view-button-small::before{
