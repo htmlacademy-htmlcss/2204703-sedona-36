@@ -357,6 +357,8 @@ position: absolute;
 
 /*advantages*/
 
+/*advantages*/
+
 .advantages{
   text-align: center;
   list-style: none;
@@ -389,6 +391,8 @@ display: flex;
 flex-flow: row wrap;
 align-content: flex-start;
 margin-bottom: 64px;
+
+list-style: none;
 }
 
 .advantages-title{ /*заголовки приемуществ НЕ ТРОГАТЬ*/
@@ -396,38 +400,61 @@ font-size: 24px;
 line-height: 28px;
 font-weight: 700px;
 text-transform: uppercase;
-margin: 102px 112px 62px 112px;
 }
 
-.advantages-title-grey{
-  margin: 112px 112px 62px 112px;
-}
 
 .advantages-description-blue{ /*описания приемуществ*/
   font-size: 18px;
   line-height: 21px;
-  margin: 0 85px 102px 85px;
   }
 
-  .advantages-description-grey{ /*описания приемуществ на сером фоне*/
-    margin: 0 85px 112px 85px;
-    }
 
 
 .advantages-of-city-item{
-box-sizing: border-box;
-width: 400px;
-height:385px;
-background-color:  rgba(131, 179, 211, 0.12);
-margin: 0;
-padding: 0;
-text-align: center;
-list-style: none;
+  box-sizing: border-box;
+  width: 400px;
+  height:385px;
+  background-color:  rgba(131, 179, 211, 0.12);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantages-texts {
+  width: 230px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advantages-of-city-item-big {
+  width: 800px;
+}
+
+.advantages-underline {
+  width: 60px;
+  height: 2px;
+  opacity: 0.3;
+}
+
+.advantages-underline-white {
+  background-color: #ffffff;
+}
+
+.advantages-underline-grey {
+  background-color: #000000;
 }
 
 .background-blue{
-background-color:#82B3D3;
-color: #FFFFFF;
+  background-color:#82B3D3;
+  color: #FFFFFF;
 }
 
 .background-dark-gray{
