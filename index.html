@@ -68,7 +68,7 @@
   <li class="advantages-of-city-item background-blue">
     <h3 class="advantages-title">Настоящий городок</h3>
     <p class="advantages-description  advantages-description-blue">Седона — не аттракцион для туристов, там течёт своя жизнь</p></li>
- <img src="./images/advantages-photo1-real-city.jpg" width="800" height="385" alt="фотография небольшого уютного дома на фоне гор">
+ <li><img src="./images/advantages-photo1-real-city.jpg" width="800" height="385" alt="фотография небольшого уютного дома на фоне гор"></li>
 
 
   <li class="advantages-of-city-item">
@@ -86,7 +86,7 @@
     <p class="advantages-description advantages-description-grey"> Большинство едет в Гранд Каньон и толпится там</p>
     </li>
 
-    <img src="./images/advantages-photo2.jpg" width="800" height="385" alt="фотография горного ущелья">
+    <li><img src="./images/advantages-photo2.jpg" width="800" height="385" alt="фотография горного ущелья"></li>
     <li class="advantages-of-city-item background-blue">
     <h3 class="advantages-title"> Там есть мост дьявола</h3>
     <p class="advantages-description  advantages-description-blue"> Да, по нему можно пройти! Если вы осмелитесь, разумеется</p></li>
@@ -125,7 +125,7 @@
 
 <section class="searching">
 <h2 class="searching-header">Заинтересовались?</h2>
-<p class="searching-header-description">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне </br> </p>
+<p class="searching-header-description">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
 
 <a href="#container-popup-window" class="button-search-hotel brown-button" id="open_button_id">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
@@ -226,30 +226,29 @@
     <li class="popup-list-item">
       <label class="form-label" for="checkin">Дата Заезда:
 
-      <div class="checkin-date-container">
+      <span class="checkin-date-container">
     <input class="checkin-field input-base-style" type="text" id="checkin" value="27 апреля 2020" name="checkin-date" placeholder="27 апреля 2020" required>
     <span class="calendar-img"></span>
-  </div>
+      </span>
 </label>
     <p class="popup-comment-checkin">Мы не можем отправить вас в прошлое.</p>
     </li>
 
     <li class="popup-list-item">
     <label class="form-label" for="checkout">Дата Выезда:
-    <div class="checkout-date-container">
+    <span class="checkout-date-container">
     <input class="checkout-field input-base-style" type="text" id="checkout" value="1 сентября 2023" name="checkout-date" placeholder="1 сентября 2023" required>
     <span class="calendar-img"></span>
-  </div>
+    </span>
   </label>
     <p class="popup-comment-checkout">На эти даты есть свободные номера. Пока есть.</p>
     </li>
 
-
-
     <li class="popup-list-item">
 
     <div class="container-adults-kids">
-    <label class="adults-kids-label">Взрослые:
+
+    <div class="adults-kids-label">Взрослые:
 
 
     <div class="container-input-counter">
@@ -267,11 +266,11 @@
         </button>
       </span>
     </div>
-    </label>
+    </div>
+    </div>
 
 
-
-    <label class="adults-kids-label">
+    <div class="adults-kids-label">
 
     <span class="kids-span">Дети:
     <span class="tooltip-button" tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно." tooltip-position="buttom"> i </span>
@@ -285,25 +284,27 @@
       </button>
     </span>
       <input type="number" class="input-counter" value="2">
-      <span class="input-counter-plus"><button class="counter-button">
+      <span class="input-counter-plus">
+        <button class="counter-button">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/></svg>
       </button>
     </span>
     </div>
-    </label>
+  </div>
     </li>
-    </div>
+  </ul>
 
-    </span>
+  </div>
     <button class="button button-search blue-button" type="submit">Найти</button>
-    </div>
-    </ul>
+
     </section>
     </div>
   </div>
 </div>
-  <!----------------------------------------script--------------------------------------------------->
+
+  <!--script-->
+
   <script src="./code.js"></script>
 
 

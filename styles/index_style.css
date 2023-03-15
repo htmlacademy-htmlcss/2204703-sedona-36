@@ -882,7 +882,7 @@ align-items: baseline;
 display: flex;
 height: 48px;
 align-items: baseline;
-gap: 88px;
+padding-right: 88px;
 }
 
 
