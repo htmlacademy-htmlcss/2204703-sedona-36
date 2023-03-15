@@ -744,7 +744,8 @@ fill: rgba(104, 162, 202, 0.3);
 
   .popup{  /*само окошко попапа*/
     box-sizing: border-box;
-    top: 396px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
     left: 0;
     font-size: 14px;
@@ -926,13 +927,28 @@ justify-content: center;
 align-items: center;
 }
 
-.counter-button:hover{
+/*.htmlacademy-link:hover path,
+.htmlacademy-link:focus path{
+  fill: #756157;
+}*/
+
+
+.input-counter-minus:hover path,
+.input-counter-plus:hover path{
   color: #000000;
 }
-.counter-button:focus{
+.counter-button:focus path{
   color: #000000;
-  border: 3px solid #82B3D3;
+}
+
+.counter-button:focus{
+border: 3px solid #82B3D3;
 border-radius: 4px;
+}
+
+.input-counter-minus:active path,
+.input-counter-plus:active path{
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .input-counter{
@@ -1292,13 +1308,13 @@ background-color: #F2F2F2;
   .input-min:focus,
   .input-max:focus{
   background-color: #E6E6E6;
-  border: solid 3px #83B3D3;
+  outline: solid 3px #83B3D3;
   }
 
   .input-min:active,
   .input-max:active{
   background-color: #F2F2F2;
-  border: solid 2px #000000;
+  outline: solid 2px #000000;
   }
 /*--------------------- БЕГУНОК--------------------------------*/
 .slider{
@@ -1482,6 +1498,9 @@ gap:8px;
   background-repeat: no-repeat;
   margin: auto;
   top: 0; left: 0; bottom: 0; right: 0;
+}
+.view-button-small{
+  border: 2px solid #000000;
 }
 
 .view-button-big::before{
