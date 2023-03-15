@@ -927,12 +927,6 @@ justify-content: center;
 align-items: center;
 }
 
-/*.htmlacademy-link:hover path,
-.htmlacademy-link:focus path{
-  fill: #756157;
-}*/
-
-
 .input-counter-minus:hover path,
 .input-counter-plus:hover path{
   color: #000000;
