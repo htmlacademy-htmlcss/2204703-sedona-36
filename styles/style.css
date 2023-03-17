@@ -333,11 +333,9 @@ background-repeat: no-repeat;
   min-height: 485px;
   background-repeat: no-repeat;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   display: flex;
-}
-
-.sign-welcome-to-sedona{
-  margin: auto;
 }
 
 .hero::before{
@@ -346,22 +344,30 @@ position: absolute;
   background-image: url(../images/hero-corners-for-background-divider.png);
   background-repeat: no-repeat;
   min-width: 1200px;
-  height: 57px;
+  min-height: 57px;
   bottom: 0;
 }
 
 .hero{
   position: relative;
-  margin-bottom: 69px;
 }
 
 /*advantages*/
 
 /*advantages*/
 
+.advantages-header-section{ /*Седона - небольшой городок в Аризоне*/
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:25px;
+padding: 69px 275px;
+}
+
 .advantages{
   text-align: center;
   list-style: none;
+  width: 100%;
 }
 
 .advantages-lead{   /*Седона - небольшой городок в Аризоне*/
@@ -370,17 +376,12 @@ position: absolute;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  width: 650px;
   margin: 0 auto;
-  margin-bottom: 25px;
-
-  }
+   }
 
   .advantages-list{ /*Рассмотрим причины*/
-    font-size: 22px;
-    line-height: 26px;
-    margin-bottom: 90px;
-
+  font-size: 22px;
+  line-height: 26px;
     }
 
 
@@ -390,15 +391,13 @@ position: absolute;
 display: flex;
 flex-flow: row wrap;
 align-content: flex-start;
-margin-bottom: 64px;
-
 list-style: none;
 }
 
 .advantages-title{ /*заголовки приемуществ НЕ ТРОГАТЬ*/
 font-size: 24px;
 line-height: 28px;
-font-weight: 700px;
+font-weight: 700;
 text-transform: uppercase;
 width: 175px;
 }
@@ -466,35 +465,47 @@ width: 175px;
   text-align: center;
 }
 
+.recomendation-section-header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+padding: 64px 348px;
+}
+
+
 .recomendation-header{ /*Приезжайте в Седону отдохнуть в комфорте и уюте!*/
   display: flex;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  width: 650px;
-  margin: 0 auto;
-  margin-bottom: 20px;
  }
 
 .recomendation-header-description{ /*Опытный персонал и качественное обслуживание!*/
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  text-align: center;
-  margin-bottom: 64px;
-
-}
+ }
 
 .recomendation-list{
+width: 100%;
 margin: 0;
 padding: 0;
 display: flex;
 flex-flow: row nowrap;
 align-content: flex-start;
-text-align: center;
 list-style: none;
-margin-bottom: 96px;
+}
+
+.recomendation-list-item{
+display: flex;
+flex-direction: column;
+gap: 30px;
+padding: 81px 85px;
+width: 400px;
+height:385px;
+align-items: center;
 }
 
 .recomendation-list-headers{
@@ -502,80 +513,60 @@ font-size: 24px;
 line-height: 28px;
 font-weight: 700;
 text-transform: uppercase;
-width: 230px;
-margin: 183px 85px 30px 85px;
-}
-
-.recomendation-list-description{
-margin: 0 85px 30px 85px;
 }
 
 .recomendation-list-item-home{
   background-color: rgba(131, 179, 211, 0.12);
   list-style: none;
-  width: 400px;
-  height:385px;
   }
 
 .recomendation-home::before{
   content:"";
-  position: absolute;
   background-image: url(../images/advantage-icon-home.svg);
   width: 75px;
   height: 72px;
   background-repeat: no-repeat;
   display: block;
-  margin: 81px 162px 30px 162px;
 }
 
 .recomendation-list-item-food{
   background-color: #FFFFFF;
   list-style: none;
-  width: 400px;
-  height:385px;
   }
+
 .recomendation-food::before{
   content:"";
-  position: absolute;
   background-image: url(../images/advantage-icon-burger.svg) ;
   width: 74px;
 height: 70px;
   background-repeat: no-repeat;
   display: block;
-  margin: 82px 162px 31px 162px;
 }
 
 .recomendation-list-item-souvenirs{
   background-color: rgba(131, 179, 211, 0.12);
   list-style: none;
-  width: 400px;
-height:385px;
 }
 .recomendation-souvenirs::before{
   content:"";
-  position: absolute;
   background-image: url(../images/advantage-icon-gifts.svg) ;
-  width: 70px;
-  height: 115px;
+  width: 64px;
+  height: 76px;
   background-repeat: no-repeat;
   display: block;
-  margin: 79px 167px 28px 168px;
 }
 
 
 /*секция поиска гостиницы*/
 
-.subscribe-form{
-  margin: 0;
-}
-
 .searching{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1200px;
-  height: auto;
+  width: 100%;
   background-color: #FFFFFF;
+  padding: 96px 304px;
+  gap:20px;
 }
 
 .searching-header{ /*Заинтересовались?*/
@@ -583,16 +574,12 @@ font-size: 30px;
 font-weight: 700;
 line-height: 36px;
 text-transform: uppercase;
-margin-bottom: 20px;
 }
 
 .searching-header-description{ /*Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне*/
   display: flex;
   font-size: 22px;
   line-height: 26px;
-  width: 592px;
-  margin: 0 auto;
-  margin-bottom: 54px;
 }
 
 
@@ -605,27 +592,22 @@ margin-bottom: 20px;
   padding: 8Px 50px;
   border-radius: 4px;
   text-decoration: none;
-  margin-bottom: 96px;
 }
 
 
 
 
 /*----------------------------------ПОДПИСКА НА РАССЫЛКУ----------------------------*/
-.subscribe-email{   /*form class="subscribe-email*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .subscribe{
+  width: 100%;
   display: flex;
   flex-flow: column;
   background-image: url(../images/footer-background-subscribe.jpg);
   background-repeat: no-repeat;
-  width: 1200px;
-  min-height: 414.86px;
   color:#FFFFFF;
   text-align: center;
+  gap: 20px;
+  padding: 96px 256px 104px 258px;
 }
 
 .subscribe-header{ /*Подпишитесь на рассылку*/
@@ -633,16 +615,22 @@ margin-bottom: 20px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: 96px;
-  margin-bottom: 20px;
 }
 
 .subscribe-header-description{ /*Только полезная информация и никакого спама, честное бойскаутское!*/
   font-size: 22px;
   line-height: 26px;
-  margin: 0 362px 54px 362px;
 }
 
+.subscribe-email{   /*form class="subscribe-email*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-form{
+  margin: 0;
+}
 
 .button-subscribe-email{ /*Подписаться*/
   font-size: 20px;
@@ -807,7 +795,7 @@ border-radius: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 64px;
+  margin: 0;
 }
 
 .close::before{
@@ -888,6 +876,13 @@ right: 20px;
 
 .searching-hotel-form-list{ /*список элементов для строчек*/
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.searching-hotel-form{
+  padding: 64px 0 48px 0;
 }
 
 
@@ -895,8 +890,10 @@ right: 20px;
   display: flex;
   flex-wrap: wrap;
 height: 73px;
-margin-bottom: 23px;
 align-items: baseline;
+}
+.popup-list-item:last-child{
+  height: 48px;
 }
 
 .popup-comment-checkout{ /*На эти даты есть свободные номера. Пока есть.*/
@@ -1067,14 +1064,6 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
  .tooltip-button:hover::after, .tooltip-button:hover::before {
     display: block;
  }
-
-
-
-
-
-
-
-
 .button-search{
   font-size: 20px;
   line-height: 36px;
@@ -1085,7 +1074,6 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   padding: 18Px 256.5px;
   border-radius: 10px;
   text-decoration: none;
-
 }
 
 input::placeholder{
@@ -1101,11 +1089,11 @@ input::placeholder{
 }
 
 .hotels-catalog{
+  width: 100%;
   background-image: url(../images/catalog-search-background.jpg);
   color: #FFFFFF;
   padding:37px 70px;
   background-repeat: no-repeat;
-  margin-bottom: 56px;
   min-height: 412px;
 }
 
@@ -1438,7 +1426,7 @@ input[type="range"]::-moz-range-thumb{ /*бегунок 2*/
 /*-----------------Секция с поиском гостиниц-------------------------------------*/
 
 .container-view-catalog{
-  margin-left: 70px;
+  padding: 50px 70px 60px 70px;
 }
 
 .container-result-view{ /*контейнер для вида*/
@@ -1740,11 +1728,13 @@ color:#000000;
 
 
 .subscribe-page-catalog{
+  width: 100%;
   display: flex;
   flex-flow: column;
-  width: 1200px;
-  min-height: 414.86px;
+  color:#000000;
   text-align: center;
+  gap: 20px;
+  padding: 96px 256px 104px 258px;
 }
 
 .subscribe-header{ /*Подпишитесь на рассылку*/
@@ -1752,20 +1742,16 @@ color:#000000;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: 96px;
-  margin-bottom: 20px;
-}
+ }
 
 .subscribe-header-description{ /*Только полезная информация и никакого спама, честное бойскаутское!*/
   font-size: 22px;
   line-height: 26px;
-  margin: 0 362px 54px 362px;
+  color: #333333;
 }
 
 .subscribe-form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
 }
 
 .button-subscribe-email{ /*Подписаться*/
