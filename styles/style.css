@@ -417,30 +417,29 @@ width: 175px;
 
 .advantages-of-city-item{
   box-sizing: border-box;
-  width: 400px;
-  height:385px;
   background-color:  rgba(131, 179, 211, 0.12);
   margin: 0;
   padding: 0;
   text-align: center;
   list-style: none;
-
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
+.advantages-of-city-item:last-child{
+  flex-direction: row-reverse;;
+}
+
 .advantages-texts {
-  width: 230px;
-  min-height: 160px;
+  width: 400px;
+  height:385px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-}
-
-.advantages-of-city-item-big {
-  width: 800px;
+  justify-content: center;
+  gap:30px;
 }
 
 .advantages-underline {
@@ -460,10 +459,16 @@ width: 175px;
 .background-blue{
   background-color:#82B3D3;
   color: #FFFFFF;
+  padding: 102px 85px;
 }
 
 .background-dark-gray{
   background-color: rgba(131, 179, 211, 0.2);
+  padding: 112px 85px;
+}
+
+.background-light-gray{
+  padding: 112px 85px;
 }
 
 .recomendation{
