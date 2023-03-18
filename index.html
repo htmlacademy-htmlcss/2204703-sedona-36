@@ -34,11 +34,11 @@
                </div>
                <ul class="navigation-list navigation-user">
                   <li class="navigation-user-item navigation-link-loupe">
-                     <button class="navigation-link" type="button"><img src="./images/icon-header-search.svg">
+                     <button class="navigation-link navigation-user-link" type="button"><img src="./images/icon-header-search.svg">
                      <span class="visualy-hidden">Поиск.</span> </button>
                   </li>
                   <li class="navigation-user-item navigation-link-favourites">
-                     <a class="navigation-link" href="#">
+                     <a class="navigation-link navigation-user-link" href="#">
                      <span class="visualy-hidden">Добавить в избранное.</span></a>
                   </li>
                   <li class="navigation-user-item button-whant-here">
@@ -64,8 +64,8 @@
                <section class="advantages">
                <div class="advantages-header-section">
                   <h2 class="visualy-hidden">Список приемуществ города Седона.</h2>
-                  <p class="advantages-lead">Седона - небольшой городок в Аризоне, заслуживающий большего</p>
-                  <p class="advantages-list">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон</p>
+                  <p class="advantages-lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+                  <p class="advantages-list">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
                </div>
 
 
@@ -81,7 +81,7 @@
                            <span class="advantages-underline advantages-underline-white"></span>
                            <p class="advantages-description  advantages-description-blue">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                         </div>
-                        <img clss="advantages-img-building" src="./images/advantages-photo1-real-city.jpg" width="800" height="385" alt="фотография небольшого уютного дома на фоне гор.">
+                        <img clss="advantages-img-building" src="./images/advantages-photo1-real-city.jpg" width="800" height="100%" alt="фотография небольшого уютного дома на фоне гор.">
                      </li>
 
                      <li class="advantages-of-city-item">
@@ -110,11 +110,11 @@
 
                      <li class="advantages-of-city-item">
                         <div class="advantages-texts background-blue">
-                           <h3 class="advantages-title"> Там есть мост дьявола</h3>
+                           <h3 class="advantages-title"> Там есть <br>мост дьявола</h3>
                            <span class="advantages-underline advantages-underline-white"></span>
                            <p class="advantages-description  advantages-description-blue"> Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                         </div>
-                        <img clss="advantages-img-mountains" src="./images/advantages-photo2.jpg" width="800" height="385" alt="фотография горного ущелья.">
+                        <img clss="advantages-img-mountains" src="./images/advantages-photo2.jpg" width="800" height="100%" alt="фотография горного ущелья.">
                      </li>
 
 
@@ -137,12 +137,12 @@
                      <li class="recomendation-list-item-food recomendation-list-item">
                         <a class="recomendation-food" href="#"></a>
                         <h3 class="recomendation-list-headers">Еда</h3>
-                        <p class="recomendation-list-description">Всегда заказывайте топовый фирменный бургер,</br> вы не разочаруетесь!</p>
+                        <p class="recomendation-list-description">Всегда заказывайте </br> топовый  фирменный бургер, вы не разочаруетесь!</p>
                      </li>
                      <li class="recomendation-list-item-souvenirs recomendation-list-item">
                         <a class="recomendation-souvenirs" href="#"></a>
                         <h3 class="recomendation-list-headers">Сувениры</h3>
-                        <p class="recomendation-list-description">Не только китайского, но и настоящего местного производства!</p>
+                        <p class="recomendation-list-description">Не только китайского,<br> но и настоящего местного производства!</p>
                      </li>
                   </ul>
                </section>
@@ -163,14 +163,13 @@
                <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
                <p class="subscribe-main-description"> Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
             </div>
-            <label class="subscribe-email-label" for="email">
-               <form class="subscribe-email" action="https://echo.htmlacademy.ru/" method="post">
-                  <p class="subscribe-form">
-                     <input type="email" id="email"  placeholder="Ваш e-mail" class="input-base-style">
-                  </p>
+                          <form class="subscribe-email" action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="subscribe-form" for="email">
+                     <input type="email" name="email" id="email"  placeholder="Ваш e-mail" class="input-base-style">
+                  </label>
                   <button class="button-subscribe-email blue-button" type="submit">подписаться</button>
                </form>
-            </label>
+
             </section>
 
 
@@ -241,115 +240,100 @@
 
 
 
-
-
-
-
-
-      <!--ВСПЛЫВАЮЩЕЕ ОКНО-->
       <div class="overlay" id="overlay_id">
-         <div class="popup">
+      <div class="popup-window">
+         <h2 class="popup-header">Поиск гостиницы в Седоне</h2>
+         <button class="close" type="button" id="close_button_id" title="Закрыть" aria-label="закрыть всплывающее окно."></button>
 
-            <button class="close" type="button" id="close_button_id" title="Закрыть" aria-label="закрыть всплывающее окно."></button>
-            <section class="searching-hotel-popup">
-               <h2 class="poup-header">Поиск гостиницы в Седоне</h2>
-                  <ul class="searching-hotel-form-list">
+         <form class="popup-input-form" action="https://echo.htmlacademy.ru/" method="post">
+               <ul class="searching-hotel-form-list">
 
+                  <li class="form-item form-date">
+                     <label class="form-label" for="checkin">Дата Заезда:</label>
 
-
-                     <li class="popup-list-item">
-                        <label class="form-label" for="checkin">Дата Заезда:
                         <div class="checkin-date-container">
-                        <input class="checkin-field input-base-style" type="text" id="checkin" value="27 апреля 2020" name="checkin-date" placeholder="27 апреля 2020" required>
+                        <input class="checkin-field form-input input-base-style" type="text" id="checkin" value="27 апреля 2020" name="checkin-date" placeholder="27 апреля 2020" required>
                         <span class="calendar-img"></span>
-                        </div>
-                        </label>
                         <p class="popup-comment-checkin">Мы не можем отправить вас в прошлое.</p>
-                     </li>
-                     <li class="popup-list-item">
-                        <label class="form-label" for="checkout">Дата Выезда:
-                        <span class="checkout-date-container">
-                        <input class="checkout-field input-base-style" type="text" id="checkout" value="1 сентября 2023" name="checkout-date" placeholder="1 сентября 2023" required>
+                        </div>
+                  </li>
+
+                  <li class="form-item form-date">
+                     <label class="form-label" for="checkout">Дата Выезда:</label>
+                     <div class="checkout-date-container">
+                        <input class="checkout-field form-input input-base-style" type="text" id="checkout" value="1 сентября 2023" name="checkout-date" placeholder="1 сентября 2023" required>
                         <span class="calendar-img"></span>
                         </span>
-                        </label>
                         <p class="popup-comment-checkout">На эти даты есть свободные номера. Пока есть.</p>
-                     </li>
+                     </div>
+                  </li>
 
 
+                  <li class="form-item form-attendants">
+                     <div class="form-attendants-item"> <label class="adults-counter" for="input-counter-adults">Взрослые: </label>
 
-                     <li class="popup-list-item ">
+
+                        <div class="container-input-counter">
+                        <span class="input-counter-minus">
+                           <button class="counter-button" type="button" aria-label="уменьшить количетсов на единицу.">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path class="minus" d="M3 9V11H17V9H3Z" fill="currentColor"/>
+                              </svg>
+                           </button>
+                        </span>
+
+                        <input type="number" class="input-counter" value="2" name="adults" id="input-counter-adults">
+
+                        <span class="input-counter-plus">
+                           <button class="counter-button" type="button" aria-label="увеличить количетсов на единицу.">
+                               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
+                              </svg>
+                           </button>
+                        </span>
+                     </div>
+
+                     </div>
 
 
-                           <label class="adults-kids-label" for="input-counter-adults">
-                              Взрослые:
-                              <div class="container-input-counter">
-
-                                 <span class="input-counter-minus">
-
-                                    <button class="counter-button" type="button" aria-label="уменьшить количетсов на единицу.">
-                                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path class="minus" d="M3 9V11H17V9H3Z" fill="currentColor"/>
-                                       </svg>
-                                    </button>
-
-                                 </span>
-
-                                 <input type="number" class="input-counter" value="2" id="input-counter-adults">
-
-                                 <span class="input-counter-plus">
-
-                                    <button class="counter-button" type="button" aria-label="увеличить количетсов на единицу.>
-                                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
-                                       </svg>
-                                    </button>
-                                 </span>
-
+                     <div class="form-attendants-item">
+                        <div class="tooltip">
+                           <label class="kids-counter" for="input-counter-kids"> Дети: </label>
+                           <div class="tooltip-icon">i
+                              <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                               </div>
-                           </label>
-
-
-
-
-
-                        <label class="adults-kids-label" for="input-counter-kids">
-
-                           <!--tooltip!-->
-                           <span class="kids-span"> Дети:
-                              <div class="tooltip-button" tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно." tooltip-position="buttom"> i </div>
-                           </span>
-
-
-                           <div class="container-input-counter">
-                              <span class="input-counter-minus">
-                                 <button class="counter-button" aria-label="уменьшить количетсов на единицу.">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path class="minus" d="M3 9V11H17V9H3Z" fill="currentColor"/>
-                                    </svg>
-                                 </button>
-                              </span>
-                              <input type="number" class="input-counter" value="2" id="input-counter-kids">
-                              <span class="input-counter-plus">
-                                 <button class="counter-button" aria-label="уменьшить количетсов на единицу.>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
-                                    </svg>
-                                 </button>
-                              </span>
                            </div>
-                        </label>
-                     </li>
-                  </ul>
 
-
-
-
-
-               <button class="button button-search blue-button" type="submit">Найти</button>
-            </section>
-         </div>
+                       <!--<div class="tooltip-icon">i
+                           <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                        </div>-->
+                        <div class="container-input-counter">
+                        <span class="input-counter-minus">
+                           <button class="counter-button" aria-label="уменьшить количетсов на единицу.">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path class="minus" d="M3 9V11H17V9H3Z" fill="currentColor"/>
+                              </svg>
+                           </button>
+                        </span>
+                        <input type="number" class="input-counter" value="2" name="kids" id="input-counter-kids">
+                        <span class="input-counter-plus">
+                           <button class="counter-button" aria-label="уменьшить количетсов на единицу.">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="currentColor"/>
+                              </svg>
+                           </button>
+                        </span>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            <button class="button button-search blue-button" type="submit">Найти</button>
+         </form>
       </div>
+      </div>
+
+
+
       <!--script-->
       <script src="./code.js"></script>
    </body>
