@@ -1173,7 +1173,6 @@ font-weight: 700;
   height: 21px;
   align-items: center;
   margin-bottom: 40px;
-  gap:11px;
   }
 
   .breadcrumbs-item{
@@ -1183,13 +1182,15 @@ font-weight: 700;
   }
 
 .breadcrumbs-link-main{
-width: 12px;
-height: 12px;
+width: 24px;
+height: 24px;
+margin-right: 4.5px;
 }
 
 .breadcrumbs-arrow{
   width: 7px;
   height: 10px;
+  margin-right: 10.5px;
 }
 
 .breadcrumbs-item-link-main{
@@ -1293,11 +1294,6 @@ top: 5px;
   content: "";
 }
 
-
-.control-input[type="checkbox"]:checked + .control-mark:focus{
-  border: solid 3px #83B3D3;
-  }
-
   .hotels-catalog-filters-items:hover{
     opacity: 60%;
   }
@@ -1311,12 +1307,16 @@ top: 5px;
   }
 
   .control-input:focus  ~ .control-mark{
-    outline: solid 3px black;
-  }
-  .control-input[type="radio"] + .control-mark:focus{
-    outline: solid 3px black;
+    outline: solid 3px #83B3D3;
   }
 
+.breadcrumbs-item-link-main:focus{
+  outline: solid 3px #83B3D3;
+}
+
+.breadcrumbs-item-link-hotels:focus{
+  outline: solid 3px #83B3D3;
+}
 
 .column-2{
   display: flex;
