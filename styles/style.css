@@ -247,6 +247,8 @@ align-items: center;
   margin-bottom: -1px;
   }
 
+
+
 .navigation-link{
   text-decoration: none;
   color: #000000;
@@ -254,6 +256,15 @@ align-items: center;
   line-height: 24px;
   font-weight: 700;
 }
+
+.navigation-list-item a:focus,
+.navigation-user-item a:focus,
+.navigation-user-item button:focus{
+  outline: none;
+  box-shadow: 0 0 1px #000000;
+}
+
+
 
 .navigation-user-link{
   padding: 22px 12px 17px 12px;
@@ -396,6 +407,25 @@ position: absolute;
   width: 100%;
 }
 
+.advantages-img-building{
+  background-color: #82B3D3;
+  background-size:  cover;
+  background-image: url(../images/advantages-photo1-real-city.jpg);
+  background-repeat: no-repeat;
+width: 800px;
+height: 100%;
+}
+
+.advantages-img-mountains{
+  background-size:  cover;
+  background-color: #82B3D3;
+  background-image: url(../images/advantages-photo2.jpg);
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 100%;
+}
+
+
 .advantages-lead{   /*Седона - небольшой городок в Аризоне*/
   display: flex;
   font-size: 30px;
@@ -455,6 +485,7 @@ width: 175px;
 
 .advantages-texts {
   width: 400px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1206,21 +1237,6 @@ color:rgba(255, 255, 255, 0.6);
   border-radius: 4px;
 }
 
-.hotels-catalog-filters-items:hover{
-  Opacity: 60%;
-}
-
-.control-mark:focus{
-  border: solid 3px black;
-}
-
-.hotels-catalog-filters-items:active{
-  Opacity: 30%;
-}
-.radio-list .control-mark{
-border-radius: 50%;
-}
-
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
@@ -1245,6 +1261,23 @@ top: 5px;
   border-radius: 50%;
   content: "";
 }
+
+
+.control-input[type="checkbox"]:checked + .control-mark:focus{
+  border: solid 3px #83B3D3;
+  }
+
+  .hotels-catalog-filters-items:hover{
+    opacity: 60%;
+  }
+
+
+  .hotels-catalog-filters-items:active{
+    opacity: 30%;
+  }
+  .radio-list .control-mark{
+  border-radius: 50%;
+  }
 
 .column-2{
   display: flex;
