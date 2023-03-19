@@ -250,18 +250,19 @@ align-items: center;
 
 
 
-.navigation-link{
+.navigation-link{  /*тег a - для Главная / О седоне / Гостиницы*/
   text-decoration: none;
   color: #000000;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  z-index: 2222;
 }
 
-.navigation-list-item a:focus,
-.navigation-user-item a:focus,
-.navigation-user-item button:focus{
-  outline:solid 2px #68A2CA;
+
+.navigation-link-tab:focus{
+  outline: 2px solid #68A2CA;
+
 }
 
 
@@ -290,7 +291,6 @@ min-width: 268px;
 
 .navigation-link-loupe{
  min-width: 44px;
-
 }
 .navigation-link-loupe a::before{
 position: absolute;
@@ -1266,6 +1266,8 @@ color:rgba(255, 255, 255, 0.6);
   border-radius: 4px;
 }
 
+
+
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
@@ -1307,6 +1309,14 @@ top: 5px;
   .radio-list .control-mark{
   border-radius: 50%;
   }
+
+  .control-input:focus  ~ .control-mark{
+    outline: solid 3px black;
+  }
+  .control-input[type="radio"] + .control-mark:focus{
+    outline: solid 3px black;
+  }
+
 
 .column-2{
   display: flex;
