@@ -249,7 +249,7 @@ box-sizing: border-box;
 }
 
 .navigation-list-item{ /*элементы: Главная / О седоне / Гостиницы*/
-padding: 0 16px;
+padding: 0 16.1px;
 box-sizing: border-box;
 
 }
@@ -289,7 +289,7 @@ align-items: center;
 }
 
 .navigation-user{  /*Навигация юзера с иконками*/
-min-width: 268px;
+min-width: 267px;
 }
 
 .navigation-user-item{
@@ -338,7 +338,7 @@ background-repeat: no-repeat;
   background-color: #7DB54F;
   border-radius:50%;
   position: absolute;
-  margin: 11px 4px 33px 20px;
+  margin: 6px 6px 33px 20px;
   content: "12";
   Font-size: 10px;
   line-height: 10px;
@@ -479,14 +479,18 @@ font-weight: 700;
 text-transform: uppercase;
 width: 175px;
 }
-
+.real-city-header{
+  margin: 0 2px 0 0;
+}
 
 .advantages-description-blue{ /*описания приемуществ*/
   font-size: 18px;
   line-height: 21px;
   }
 
-
+.advantages-description-grey{
+  margin-top: -1px;
+}
 
 .advantages-of-city-item{
   box-sizing: border-box;
@@ -547,7 +551,7 @@ width: 175px;
 
 .background-dark-gray{
   background-color: rgba(131, 179, 211, 0.2);
-  padding: 112px 85px;
+  padding: 114px 85px;
 }
 
 .background-light-gray{
@@ -564,7 +568,7 @@ width: 175px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-padding: 64px 348px;
+padding: 61px 348px;
 box-sizing: border-box;
 }
 
@@ -605,6 +609,10 @@ align-items: center;
 box-sizing: border-box;
 }
 
+.recomendation-home-description{
+  padding: 81px 114px;
+}
+
 .advantages-img-building, .advantages-img-mountains{
   object-fit: cover;
   box-sizing: border-box;
@@ -615,6 +623,15 @@ font-size: 24px;
 line-height: 28px;
 font-weight: 700;
 text-transform: uppercase;
+margin: 4px 1px 0 0;
+}
+
+.recomendation-header-souvenirs{
+  margin: 1px 1px 0 0;
+}
+
+.recomendation-list-description{
+  margin: -1px -1px 0 0;
 }
 
 .recomendation-list-item-home{
