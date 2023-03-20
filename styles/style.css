@@ -846,7 +846,7 @@ margin: -2px 0;
 }
 
 .footer-contact-phone{
-  margin: 0 2px;
+  margin: -1px 1px;
 font-size: 40px;
 line-height: 40px;
 text-decoration:none;
@@ -856,6 +856,10 @@ width: 333px;
 height: 100%;
 display: flex;
 align-items: center;
+}
+
+.footer-contact-phone-catalog{
+  margin: 0 1px;
 }
 
 .footer-contact-phone:hover,
@@ -887,7 +891,7 @@ fill: rgba(104, 162, 202, 0.3);
   width: 100%;
   grid-column: 3;
   padding-top: 49px;
-  margin: -1px -6px;
+  margin: -2px -4px;
 }
 
 .htmlacademy-link:hover path,
@@ -1727,7 +1731,7 @@ margin: 2px 0;
 }
 
 .hotels-item-list-container{
-  padding: 20px 19px 20px 18px;
+  padding: 18px 19px 20px 18px;
   box-sizing: border-box;
 }
 
