@@ -15,28 +15,36 @@
                   <a href="#">
                   <img class="logo" src="./images/icon-header-logo.svg" height="70" width="140" alt="Логотип сайта.">
                   </a>
-                  <ul class="navigation-list">
-                     <li class="navigation-list-item">
-                        <a class="navigation-link navigation-link-current a-all-style" href="index.html">Главная </a>
+
+                  <ul class="navigation-list ul-all-style">
+                     <li class="navigation-list-item li-all.style">
+                        <a class="navigation-link navigation-link-current navigation-link-tab a-all-style" href="index.html">Главная </a>
                      </li>
-                     <li class="navigation-list-item">
-                        <a class="navigation-link a-all-style" href="about.html">О Седоне </a>
+                     <li class="navigation-list-item li-all.style">
+                        <a class="navigation-link navigation-link-tab a-all-style" href="about.html">О Седоне </a>
                      </li>
-                     <li class="navigation-list-item" >
-                        <a class="navigation-link a-all-style" href="hotels.html" data-current="current">Гостиницы</a>
+                     <li class="navigation-list-item li-all.style">
+                        <a class="navigation-link navigation-link-tab a-all-style" href="hotels.html" data-current="current">Гостиницы</a>
                      </li>
                   </ul>
+
+
+
+
+
                </div>
-               <ul class="navigation-list navigation-user">
-                  <li class="navigation-user-item navigation-link-loupe">
-                     <a class="navigation-link a-all-style " href="#">
-                     <span class="visualy-hidden">Поиск.</span> </a>
+               <ul class="navigation-list navigation-user ul-all-style">
+                  <li class="navigation-user-item navigation-link-loupe li-all.style">
+                     <button class="navigation-link navigation-user-link navigation-link-tab button-all-style" type="button"><img src="./images/icon-header-search.svg" width="18" height="18" alt="кнопка поиска">
+                     <span class="visualy-hidden">Поиск.</span> </button>
                   </li>
-                  <li class="navigation-user-item navigation-link-favourites">
-                     <a class="navigation-link a-all-style" href="#">
-                     <span class="visualy-hidden">добавить в избранное.</span></a>
+                  <li class="navigation-user-item navigation-link-favourites li-all.style">
+                     <a class="navigation-link navigation-user-link navigation-link-tab a-all-style" href="#">
+                     <span class="visualy-hidden">Добавить в избранное.</span></a>
                   </li>
-                  <li class="navigation-user-item button-whant-here">
+
+
+                  <li class="navigation-user-item button-whant-here li-all.style">
                      <a class="navigation-link navigation-link-button brown-button a-all-style" href="#">Хочу сюда!</a>
                   </li>
                </ul>
@@ -45,16 +53,16 @@
          <main class="main-inner">
             <section class="hotels-catalog">
                <h1 class="hotels-catalog-title h1-all-style">Гостиницы Седоны</h1>
-               <ol class="breadcrumbs">
-                  <li class="breadcrumbs-item breadcrumbs-link-main">
+               <ol class="breadcrumbs .ol-all-style">
+                  <li class="breadcrumbs-item breadcrumbs-link-main li-all.style">
                      <a class="breadcrumbs-item-link-main a-all-style" href="hotels.html">
                      <span class="visualy-hidden">Перейти на главнаую страницу.</span>
                      </a>
                   </li>
-                  <li class="breadcrumbs-item breadcrumbs-arrow">
+                  <li class="breadcrumbs-item breadcrumbs-arrow li-all.style">
                      <span class="breadcrumbs-item-arrow"></span>
                   </li>
-                  <li class="breadcrumbs-item">
+                  <li class="breadcrumbs-item li-all.style">
                      <a class="breadcrumbs-item-link-hotels a-all-style" href="index.html">Гостиницы</a>
                   </li>
                </ol>
@@ -64,24 +72,24 @@
                      <form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="get">
                         <fieldset class="catalog-folter-group fieldset-all-style">
                            <legend class="catalog-filter-title">Инфраструктура:</legend>
-                           <ul class="catalog-filter-list checkbox-list">
-                              <li class="hotels-catalog-filters-items">
+                           <ul class="catalog-filter-list checkbox-list ul-all-style">
+                              <li class="hotels-catalog-filters-items li-all.style">
                                  <label class="control">
-                                 <input class="visualy-hidden control-input" type="checkbox" name="infrastructure" checked>
+                                 <input class="visualy-hidden control-input input-all-style" type="checkbox" name="infrastructure" checked>
                                  <span class="control-mark"></span>
                                  <span class="control-label">Бассейн</span>
                                  </label>
                               </li>
-                              <li class="hotels-catalog-filters-items">
+                              <li class="hotels-catalog-filters-items li-all.style">
                                  <label class="control">
-                                 <input class="visualy-hidden control-input" type="checkbox" name="infrastructure" checked>
+                                 <input class="visualy-hidden control-input input-all-style" type="checkbox" name="infrastructure" checked>
                                  <span class="control-mark"></span>
                                  <span class="control-label">Парковка</span>
                                  </label>
                               </li>
-                              <li class="hotels-catalog-filters-items">
+                              <li class="hotels-catalog-filters-items li-all.style">
                                  <label class="control">
-                                 <input class="visualy-hidden control-input" type="checkbox" name="infrastructure" >
+                                 <input class="visualy-hidden control-input input-all-style" type="checkbox" name="infrastructure" >
                                  <span class="control-mark"></span>
                                  <span class="control-label">WI-FI</span>
                                  </label>
@@ -93,24 +101,24 @@
                   <div class="column-2">
                      <fieldset class="catalog-folter-group fieldset-all-style">
                         <legend class="catalog-filter-title">Тип Жилья:</legend>
-                        <ul class="catalog-filter-list radio-list">
-                           <li class="hotels-catalog-filters-items">
+                        <ul class="catalog-filter-list radio-list ul-all-style">
+                           <li class="hotels-catalog-filters-items li-all.style">
                               <label class="control">
-                              <input class="visualy-hidden control-input" type="radio" name="kind-of-house" checked>
+                              <input class="visualy-hidden control-input input-all-style" type="radio" name="kind-of-house" checked>
                               <span class="control-mark"></span>
                               <span class="control-label">Гостиница</span>
                               </label>
                            </li>
-                           <li class="hotels-catalog-filters-items">
+                           <li class="hotels-catalog-filters-items li-all.style">
                               <label class="control">
-                              <input class="visualy-hidden control-input" type="radio" name="kind-of-house">
+                              <input class="visualy-hidden control-input input-all-style" type="radio" name="kind-of-house">
                               <span class="control-mark"></span>
                               <span class="control-label">Мотель</span>
                               </label>
                            </li>
-                           <li class="hotels-catalog-filters-items">
+                           <li class="hotels-catalog-filters-items li-all.style">
                               <label class="control">
-                              <input class="visualy-hidden control-input" type="radio" name="kind-of-house">
+                              <input class="visualy-hidden control-input input-all-style" type="radio" name="kind-of-house">
                               <span class="control-mark"></span>
                               <span class="control-label">Апартаменты</span>
                               </label>
@@ -125,11 +133,11 @@
                         <div class="field">
                            <div class="field-lower-price">
                               <label class="min-price" for="input-min">от</label>
-                              <input type="number" name="price" class="input-all-style input-min" id="input-min" value="0" placeholder="0" required>
+                              <input type="number" name="price" class="input-all-style input-min input-base-style" id="input-min" value="0" placeholder="0" required>
                            </div>
                            <div class="heighter-price">
                               <label class="max-price" for="input-max">до</label>
-                              <input type="number" name="price" class="input-all-style input-max" id="input-max" value="9000" placeholder="9000" required>
+                              <input type="number" name="price" class="input-all-style input-max input-base-style" id="input-max" value="9000" placeholder="9000" required>
                            </div>
                         </div>
                         <div class="slider">
@@ -158,18 +166,18 @@
                         <option value="expensive">Сначала дорогие</option>
                         <option value="popular">Сначала популярные</option>
                      </select>
-                     <ul class="view-icons-catalog">
+                     <ul class="view-icons-catalog ul-all-style li-all.style">
                         <li class="view-icons-catog-item">
                            <button class="view-button-small view-button button-all-style" type="button">
                            <span class="visualy-hidden">Показать маленькие карточки гостиниц.</span>
                            </button>
                         </li>
-                        <li class="view-icons-catog-item">
+                        <li class="view-icons-catog-item li-all.style">
                            <button class="view-button-big view-button button-all-style" type="button">
                            <span class="visualy-hidden">Показать большие карточки гостиниц.</span>
                            </button>
                         </li>
-                        <li class="view-icons-catog-item">
+                        <li class="view-icons-catog-item li-all.style">
                            <button class="view-button-list view-button button-all-style" type="button">
                            <span class="visualy-hidden">Показать список гостиниц.</span>
                            </button>
@@ -177,12 +185,12 @@
                      </ul>
                   </div>
                </div>
-               <ul class="hotels-list">
-                  <li class="hotels-list-item">
+               <ul class="hotels-list ul-all-style">
+                  <li class="hotels-list-item li-all.style">
                      <div class="hotels-item-list-container">
                         <a class="hotel-card-link a-all-style" href="#">
                            <img class="hotel-photo" src="./images/catalog-amara-hotel-1.jpg" height="212" width="300" alt="вид на звездное небо из горного ущелья.">
-                           <h3 class="hotel-name">Amara Resort & Spa</h3>
+                           <h3 class="hotel-name  h3-all-style">Amara Resort & Spa</h3>
                         </a>
                         <div class="container-hotel-card-details">
                            <div class="hotel-card-category">Гостиница</div>
@@ -199,11 +207,11 @@
                         </div>
                      </div>
                   </li>
-                  <li class="hotels-list-item">
+                  <li class="hotels-list-item li-all.style">
                      <div class="hotels-item-list-container">
                         <a class="hotel-card-link a-all-style" href="#">
                            <img class="hotel-photo" src="./images/catalog-villas-diavlo-hotel-2.jpg" height="212" width="300" alt="фотография скалы на фоне радуги.">
-                           <h3 class="hotel-name">Villas at Poco Diablo</h3>
+                           <h3 class="hotel-name h3-all-style">Villas at Poco Diablo</h3>
                         </a>
                         <div class="container-hotel-card-details">
                            <div class="hotel-card-category">Гостиница</div>
@@ -220,11 +228,11 @@
                         </div>
                      </div>
                   </li>
-                  <li class="hotels-list-item">
+                  <li class="hotels-list-item li-all.style">
                      <div class="hotels-item-list-container">
                         <a class="hotel-card-link a-all-style" href="#">
                            <img class="hotel-photo" src="./images/catalog-desert-quail-hotel-3.jpg" height="212" width="300" alt="фото скалы на фоне голубого неба.">
-                           <h3 class="hotel-name">Desert Quail Inn</h3>
+                           <h3 class="hotel-name h3-all-style">Desert Quail Inn</h3>
                         </a>
                         <div class="container-hotel-card-details">
                            <div class="hotel-card-category">Гостиница</div>
@@ -240,11 +248,11 @@
                         </div>
                      </div>
                   </li>
-                  <li class="hotels-list-item">
+                  <li class="hotels-list-item li-all.style">
                      <div class="hotels-item-list-container">
                         <a class="hotel-card-link a-all-style" href="#">
                            <img class="hotel-photo" src="./images/catalog-greentree-hotel-4.jpg" height="212" width="300" alt="фото скалы на фоне звездного неба.">
-                           <h3 class="hotel-name">GreenTree Inn</h3>
+                           <h3 class="hotel-name h3-all-style">GreenTree Inn</h3>
                         </a>
                         <div class="container-hotel-card-details">
                            <div class="hotel-card-category">Гостиница</div>
@@ -263,23 +271,23 @@
             </section>
             <section class="pagination-section">
                <div class="separation-line"></div>
-               <ul class="pagination">
-                  <li class="pagination-item-first">
+               <ul class="pagination ul-all-style">
+                  <li class="pagination-item-first li-all.style">
                      <a class="pagination-link pagination-current a-all-style" href="#">1</a>
                   </li>
-                  <li class="pagination-item">
+                  <li class="pagination-item li-all.style">
                      <a class="pagination-link a-all-style" href="#">2</a>
                   </li>
-                  <li class="pagination-item">
+                  <li class="pagination-item li-all.style">
                      <a class="pagination-link a-all-style" href="#">3</a>
                   </li>
-                  <li class="pagination-item">
+                  <li class="pagination-item li-all.style">
                      <a class="pagination-link a-all-style" href="#">4</a>
                   </li>
-                  <li class="pagination-item-ellipsis">
+                  <li class="pagination-item-ellipsis li-all.style">
                      <span >...</span>
                   </li>
-                  <li class="pagination-item">
+                  <li class="pagination-item li-all.style">
                      <a class="pagination-link a-all-style" href="#">10</a>
                   </li>
                </ul>
@@ -287,7 +295,7 @@
             <section class="subscribe-page-catalog">
                <div class="header-description-container">
                   <h2 class="subscribe-header h2-all-style">Подпишитесь на рассылку</h2>
-                  <p class="subscribe-catalog-description"> Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+                  <p class="subscribe-catalog-description p-all-style"> Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
                </div>
                <form class="subscribe-email" action="https://echo.htmlacademy.ru/" method="post">
                   <label class="subscribe-form" for="email">
@@ -299,8 +307,8 @@
             <footer class="main-footer">
                <section class="footer-social">
                   <h2 class="visualy-hidden"> Контакты. </h2>
-                  <ul class="footer-social-list">
-                     <li class="footer-social-list-item">
+                  <ul class="footer-social-list ul-all-style">
+                     <li class="footer-social-list-item li-all.style">
                         <a class="link-social a-all-style" href="https://vk.com/htmlacademy">
                            <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path class="social-image" fill-rule="evenodd" clip-rule="evenodd" d="M24.1164 1.80445C24.2824 1.25845 24.1164 0.856445 23.3214 0.856445H20.6964C20.0284 0.856445 19.7204 1.20345 19.5534 1.58645C19.5534 1.58645 18.2184 4.78245 16.3274 6.85845C15.7154 7.46045 15.4374 7.65145 15.1034 7.65145C14.9364 7.65145 14.6854 7.46045 14.6854 6.91345V1.80445C14.6854 1.14845 14.5014 0.856445 13.9454 0.856445H9.81738C9.40038 0.856445 9.14938 1.16045 9.14938 1.44945C9.14938 2.07045 10.0954 2.21445 10.1924 3.96245V7.76045C10.1924 8.59345 10.0394 8.74444 9.70538 8.74444C8.81538 8.74444 6.65038 5.53345 5.36538 1.85945C5.11638 1.14445 4.86438 0.856445 4.19338 0.856445H1.56638C0.816382 0.856445 0.666382 1.20345 0.666382 1.58645C0.666382 2.26845 1.55638 5.65645 4.81138 10.1374C6.98138 13.1974 10.0364 14.8564 12.8194 14.8564C14.4884 14.8564 14.6944 14.4884 14.6944 13.8534V11.5404C14.6944 10.8034 14.8524 10.6564 15.3814 10.6564C15.7714 10.6564 16.4384 10.8484 17.9964 12.3234C19.7764 14.0724 20.0694 14.8564 21.0714 14.8564H23.6964C24.4464 14.8564 24.8224 14.4884 24.6064 13.7604C24.3684 13.0364 23.5184 11.9854 22.3914 10.7384C21.7794 10.0284 20.8614 9.26345 20.5824 8.88045C20.1934 8.38945 20.3044 8.17044 20.5824 7.73345C20.5824 7.73345 23.7824 3.30745 24.1154 1.80445H24.1164Z" fill="#83B3D3"/>
@@ -308,7 +316,7 @@
                            <span class="visualy-hidden">Перейти на страницу во Вконтакте.</span>
                         </a>
                      </li>
-                     <li class="footer-social-list-item">
+                     <li class="footer-social-list-item li-all.style">
                         <a class="link-social a-all-style" href="https://t.me/htmlacademy">
                            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path class="social-image" d="M16.785 0.955705L0.840489 7.1042C-0.247661 7.54126 -0.241365 8.14828 0.640845 8.41897L4.73445 9.69597L14.2058 3.72014C14.6537 3.44766 15.0629 3.59424 14.7265 3.89281L7.05283 10.8183H7.05103L7.05283 10.8192L6.77045 15.0387C7.18413 15.0387 7.36669 14.8489 7.59871 14.625L9.58705 12.6915L13.7229 15.7464C14.4855 16.1664 15.0332 15.9506 15.2229 15.0405L17.9379 2.2453C18.2158 1.13107 17.5126 0.626562 16.785 0.955705Z" fill="#83B3D3"/>
@@ -316,7 +324,7 @@
                            <span class="visualy-hidden">Перейти в канал в Телеграм.</span>
                         </a>
                      </li>
-                     <li class="footer-social-list-item">
+                     <li class="footer-social-list-item li-all.style">
                         <a class="link-social a-all-style" href="https://www.youtube.com/user/htmlacademyru">
                            <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path class="social-image" d="M18.9402 0.356445H3.50738C1.64668 0.356445 0.333252 1.9502 0.333252 3.75645V13.8502C0.333252 15.7627 1.64668 17.3564 3.50738 17.3564H19.1591C20.8009 17.3564 22.3333 15.7627 22.3333 13.9564V3.75645C22.1143 1.9502 20.8009 0.356445 18.9402 0.356445ZM7.99494 12.8939V4.81894L15.3283 8.85645L7.99494 12.8939Z" fill="#83B3D3"/>

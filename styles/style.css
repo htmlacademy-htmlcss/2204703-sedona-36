@@ -40,7 +40,8 @@ html{
 
 .h1-all-style,
 .h2-all-style,
- h3, h4, p{
+ .h3-all-style,
+ .p-all-style{
   margin: 0;
   padding: 0;
 }
@@ -65,13 +66,10 @@ a:focus{
   outline: none;
 }
 
-h1,
-h2, h3, h4, p{
-  margin: 0;
-  padding: 0;
-}
 
-ul, ol, li{
+.ul-all-style,
+.ol-all-style,
+.li-all.style{
 margin: 0;
 padding: 0;
 }
