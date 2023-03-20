@@ -846,7 +846,7 @@ margin: -2px 0;
 }
 
 .footer-contact-phone{
-  margin: 1px 2px;
+  margin: 0 2px;
 font-size: 40px;
 line-height: 40px;
 text-decoration:none;
@@ -867,13 +867,19 @@ color:#756157;
   color: rgba(117, 97, 87, 0.3)
 }
 
-.footer-social-list-item:hover path,
-.footer-social-list-item:active path{
+.footer-social-list-item:hover path{
   fill: #68A2CA;
 }
+
 .footer-social-list-item:active path{
 fill: rgba(104, 162, 202, 0.3);
 }
+
+.link-social:focus path{
+  fill: #68A2CA;
+  }
+
+
 
 .htmlacademy-link{
   display: block;
@@ -881,7 +887,7 @@ fill: rgba(104, 162, 202, 0.3);
   width: 100%;
   grid-column: 3;
   padding-top: 49px;
-  margin: 0 -6px;
+  margin: -1px -6px;
 }
 
 .htmlacademy-link:hover path,
