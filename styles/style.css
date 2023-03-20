@@ -514,7 +514,7 @@ width: 175px;
 
 
 .advantages-of-city-item:last-child{
-  flex-direction: row-reverse;;
+  flex-direction: row-reverse;
 }
 
 .advantages-texts {
