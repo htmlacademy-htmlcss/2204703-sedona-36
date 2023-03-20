@@ -506,11 +506,10 @@ width: 175px;
 }
 
 .advantages-of-city-item:nth-child(odd){
-  background-color:  rgba(131, 179, 211, 0.12)
-
+  background-color: rgba(131, 179, 211, 0.2);
 }
 .advantages-of-city-item:nth-child(even){
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color:  rgba(131, 179, 211, 0.12);
 }
 
 
@@ -549,12 +548,11 @@ width: 175px;
   padding: 102px 85px;
 }
 
-.background-dark-gray{
-  background-color: rgba(131, 179, 211, 0.2);
+.padding-pixelperfect-dark-gray{
   padding: 114px 85px;
 }
 
-.background-light-gray{
+.padding-pixelperfect-light-gray{
   padding: 112px 85px;
 }
 
@@ -663,6 +661,10 @@ box-sizing: border-box;
 
   .recomendation-list-item:nth-child(odd){
     background-color: rgba(131, 179, 211, 0.12);
+  }
+
+  .recomendation-list-item:nth-child(even){
+    background-color:#FFFFFF;
   }
 
 .recomendation-food::before{
@@ -1098,6 +1100,7 @@ box-sizing: border-box;
     display: flex;
     gap:46px;
     box-sizing: border-box;
+    align-items: center;
   }
 
 
@@ -1111,6 +1114,7 @@ font-weight: 400;
  text-align: center;
 position: relative;
 box-sizing: border-box;
+flex-shrink: 0;
   }
 
   .tooltip-text{
@@ -1155,8 +1159,9 @@ box-sizing: border-box;
   .container-input-counter{
     position: relative;
     width: 110px;
-    height: 100%;
+    height: 48px;
     box-sizing: border-box;
+    flex-shrink: 0;
     }
 
     .input-counter-minus, .input-counter-plus{
